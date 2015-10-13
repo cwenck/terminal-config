@@ -9,7 +9,7 @@ alias app='cd /Applications/'
 alias desk='cd ~/Desktop/'
 alias cd..='cd ..'
 alias zshconfig='cd ~/.oh-my-zsh/custom/'
-alias sysconfig='cd ~/.sys-config/'
+alias myconfig='cd ~/.sys-config/'
 
 #Added Commands
 alias trashdl='mv ~/Downloads/* ~/.Trash'
@@ -37,6 +37,19 @@ alias uwsim='rosrun uwsim uwsim --disableShaders --disableTextures'
 #Function Aliases
 changeDirAndList(){
   cd $1
-  ls $1
+  clear
+  ls
 }
 alias cdl=changeDirAndList
+
+ranger-cd(){
+  tempfile='/tmp/tmprangerdir'
+  ranger --choosedir="$tempfile" "${@:-$(pwd)}"
+  test -f "$tempfile" &&
+  if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+    cd -- "$(cat "$tempfile")"
+  fi
+  rm -f -- "$tempfile"
+}
+alias rcd=ranger-cd
+alias cdr=ranger-cd
