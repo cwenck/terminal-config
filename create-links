@@ -1,0 +1,19 @@
+#!/bin/bash
+
+scriptpath="$(dirname ${BASH_SOURCE[0]})"
+
+ln -s $scriptpath/vimrc ~/.vimrc > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+  echo 'Created .vimrc'
+else
+  echo 'Skipping .vimrc'
+fi
+
+ln -s $scriptpath/custom ~/.oh-my-zsh/custom > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+  echo 'Creating personal zsh customizations'
+else
+  echo 'Skipping zsh customization'
+fi
