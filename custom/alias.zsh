@@ -7,6 +7,7 @@ alias doc='cd ~/Documents/'
 alias cl='clear'
 alias app='cd /Applications/'
 alias desk='cd ~/Desktop/'
+alias cd..='cd ..'
 alias zshconfig='cd ~/.oh-my-zsh/custom/'
 alias sysconfig='cd ~/.sys-config/'
 
@@ -29,6 +30,9 @@ alias mlab='matlab -nodesktop'
 alias sha1='shasum -a 1'
 alias sha256='shasum -a 256'
 alias sha512='shasum -a 512'
+
+#Robotics
+alias uwsim='rosrun uwsim uwsim --disableShaders --disableTextures'
 
 #Function Aliases
 changeDirAndList(){
