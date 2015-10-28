@@ -17,3 +17,11 @@ if [ $? -eq 0 ]; then
 else
   echo 'Skipping zsh customization'
 fi
+
+mkdir ~/.bin
+
+if [ $? -eq 0]; then
+  echo 'Creating ~/.bin'
+else
+  echo 'Skipping creation of ~/.bin'
+fi

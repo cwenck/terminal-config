@@ -10,6 +10,7 @@ alias desk='cd ~/Desktop/'
 alias cd..='cd ..'
 alias zshconfig='cd ~/.oh-my-zsh/custom/'
 alias myconfig='cd ~/.sys-config/'
+alias cyber='cd ~/.cyber'
 
 #Added Commands
 alias trashdl='mv ~/Downloads/* ~/.Trash'
@@ -18,6 +19,7 @@ alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
 alias starwars='telnet towel.blinkenlights.nl'
 alias viewdir='ranger'
+alias brewcl='brew update && brew upgrade && brew prune'
 
 #Defaults for Commands
 alias cowsay='clear;cowsay'
@@ -33,6 +35,7 @@ alias sha512='shasum -a 512'
 
 #Robotics
 alias uwsim='rosrun uwsim uwsim --disableShaders --disableTextures'
+alias robotssh='ssh connor@192.168.56.101'
 
 #Function Aliases
 changeDirAndList(){
@@ -41,6 +44,11 @@ changeDirAndList(){
   ls
 }
 alias cdl=changeDirAndList
+
+mvToTrash(){
+  mv $1 ~/.Trash
+}
+alias trash=mvToTrash
 
 ranger-cd(){
   tempfile='/tmp/tmprangerdir'
