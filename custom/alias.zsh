@@ -26,6 +26,7 @@ alias cowsay='clear;cowsay'
 alias cowsays='clear;cowsay'
 alias figlet='clear;figlet'
 alias blktxt='clear;figlet'
+alias scalpel='scalpel -c ~/.cyber/scalpel.conf'
 
 #Program Shortcuts
 alias mlab='matlab -nodesktop'
