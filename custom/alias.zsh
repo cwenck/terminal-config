@@ -13,6 +13,9 @@ alias zshconfig='cd ~/.oh-my-zsh/custom/'
 alias myconfig='cd ~/.sys-config/'
 alias cyber='cd ~/.cyber'
 
+#ACES
+alias aces='ssh cwenck@acesclass.umd.edu -p5044'
+
 #Added Commands
 alias trashdl='mv ~/Downloads/* ~/.Trash'
 alias dlclear=trashdl
@@ -20,7 +23,7 @@ alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
 alias starwars='telnet towel.blinkenlights.nl'
 alias viewdir='ranger'
-alias brewcl='brew update && brew upgrade && brew prune'
+alias brewfix='brew update && brew upgrade && brew prune && brew doctor'
 
 #Defaults for Commands
 alias cowsay='clear;cowsay'
