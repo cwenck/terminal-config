@@ -23,7 +23,7 @@ alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
 alias starwars='telnet towel.blinkenlights.nl'
 alias viewdir='ranger'
-alias brewfix='brew update && brew upgrade && brew prune && brew doctor'
+alias brewfix='brew update && brew upgrade -v && brew prune && brew cleanup && brew cask cleanup'
 
 #Defaults for Commands
 alias cowsay='clear;cowsay'
