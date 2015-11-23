@@ -24,6 +24,7 @@ alias refresh='. ~/.zshrc'
 alias starwars='telnet towel.blinkenlights.nl'
 alias viewdir='ranger'
 alias brewfix='brew update && brew upgrade -v && brew prune && brew cleanup && brew cask cleanup'
+alias cpumodel='sysctl -n machdep.cpu.brand_string'
 
 #Defaults for Commands
 alias cowsay='clear;cowsay'
@@ -51,9 +52,28 @@ changeDirAndList(){
 alias cdl=changeDirAndList
 
 mvToTrash(){
-  mv $1 ~/.Trash
+  for arg in $*
+  do
+    mv $arg ~/.Trash
+  done
 }
 alias trash=mvToTrash
+
+pushDirList(){
+  pushd $1
+  clear
+  ls
+}
+alias pushdl=pushDirList
+alias push=pushDirList
+
+popDirList(){
+  popd $1
+  clear
+  ls
+}
+alias popdl=popDirList
+alias pop=popDirList
 
 ranger-cd(){
   tempfile='/tmp/tmprangerdir'
