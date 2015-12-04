@@ -6,19 +6,21 @@ alias home='cd ~'
 alias doc='cd ~/Documents/'
 alias cl='clear'
 alias app='cd /Applications/'
+alias apps='cd /Applications/'
 alias desk='cd ~/Desktop/'
 alias cd..='cd ..'
 alias back='cd -'
 alias zshconfig='cd ~/.oh-my-zsh/custom/'
 alias myconfig='cd ~/.sys-config/'
 alias cyber='cd ~/.cyber'
+alias subl-snippet='cd /Users/connor/Library/Application Support/Sublime Text 3/Packages/User'
 
 #ACES
 alias aces='ssh cwenck@acesclass.umd.edu -p5044'
 
 #Added Commands
 alias trashdl='mv ~/Downloads/* ~/.Trash'
-alias dlclear=trashdl
+alias dlclear='mv ~/Downloads/* ~/.Trash'
 alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
 alias starwars='telnet towel.blinkenlights.nl'
@@ -33,6 +35,7 @@ alias figlet='clear;figlet'
 alias blktxt='clear;figlet'
 alias scalpel='scalpel -c ~/.cyber/scalpel.conf'
 alias axel='axel -n 4'
+alias waldo='python ~/.cyber/waldo/waldo.py'
 
 #Program Shortcuts
 alias mlab='matlab -nodesktop'
