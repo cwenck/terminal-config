@@ -1,1 +1,1 @@
-plugins=(brew)
+plugins=(git brew brew-cask)
