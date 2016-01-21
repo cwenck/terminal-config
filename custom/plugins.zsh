@@ -1,1 +1,1 @@
-plugins=(git brew brew-cask)
+plugins=(git brew brew-cask vagrant)
