@@ -27,6 +27,7 @@ alias starwars='telnet towel.blinkenlights.nl'
 alias viewdir='ranger'
 alias brewfix='brew update && brew upgrade -v && brew prune && brew cleanup && brew cask cleanup'
 alias cpumodel='sysctl -n machdep.cpu.brand_string'
+alias zshupgrade='upgrade_oh_my_zsh' 
 
 #Defaults for Commands
 alias cowsay='clear;cowsay'
