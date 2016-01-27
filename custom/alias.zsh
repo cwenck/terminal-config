@@ -15,6 +15,9 @@ alias myconfig='cd ~/.sys-config/'
 alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
 
+#UMD SSH
+alias glue='ssh cwenck@glue.umd.edu'
+
 #ACES
 alias aces='ssh cwenck@acesclass.umd.edu -p5044'
 
