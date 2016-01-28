@@ -2,6 +2,15 @@
 
 scriptpath="$(dirname ${BASH_SOURCE[0]})"
 
+if [[ $scriptpath == "." ]]; then
+  echo "True"
+  scriptpath=$(pwd)
+else
+  echo "False"
+fi
+echo $scriptpath
+echo $(pwd)
+
 ln -s $scriptpath/vimrc ~/.vimrc > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
@@ -9,6 +18,16 @@ if [ $? -eq 0 ]; then
 else
   echo 'Skipping .vimrc'
 fi
+
+
+ln -s $scriptpath/vim ~/.vim > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+  echo 'Created .vim directory'
+else
+  echo 'Skipping .vim directory'
+fi
+
 
 ln -s $scriptpath/custom ~/.oh-my-zsh/custom > /dev/null 2>&1
 
@@ -18,9 +37,9 @@ else
   echo 'Skipping zsh customization'
 fi
 
-mkdir ~/.bin
+mkdir ~/.bin > /dev/null 2>&1
 
-if [ $? -eq 0]; then
+if [ $? -eq 0 ]; then
   echo 'Creating ~/.bin'
 else
   echo 'Skipping creation of ~/.bin'

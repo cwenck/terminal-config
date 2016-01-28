@@ -11,9 +11,13 @@ alias desk='cd ~/Desktop/'
 alias cd..='cd ..'
 alias back='cd -'
 alias zshconfig='cd ~/.oh-my-zsh/custom/'
-alias myconfig='cd ~/.sys-config/'
+alias cfg='cd ~/.sys-config/'
 alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
+
+#Finder Aliases
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles true; killall Finder'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles false; killall Finder'
 
 #UMD SSH
 alias grace='ssh cwenck@linux.grace.umd.edu'
