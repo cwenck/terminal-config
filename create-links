@@ -3,13 +3,31 @@
 scriptpath="$(dirname ${BASH_SOURCE[0]})"
 
 if [[ $scriptpath == "." ]]; then
-  echo "True"
   scriptpath=$(pwd)
-else
-  echo "False"
 fi
-echo $scriptpath
-echo $(pwd)
+
+########################################################
+########################################################
+
+ln -s $scriptpath/gitconfig ~/.gitconfig > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+  echo 'Created global .gitconfig'
+else
+  echo 'Skipping global .gitconfig'
+fi
+
+########################################################
+
+ln -s $scriptpath/gitignore ~/.gitignore > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+  echo 'Created global .gitignore'
+else
+  echo 'Skipping global .gitignore'
+fi
+
+########################################################
 
 ln -s $scriptpath/vimrc ~/.vimrc > /dev/null 2>&1
 
@@ -19,6 +37,7 @@ else
   echo 'Skipping .vimrc'
 fi
 
+########################################################
 
 ln -s $scriptpath/vim ~/.vim > /dev/null 2>&1
 
@@ -28,6 +47,7 @@ else
   echo 'Skipping .vim directory'
 fi
 
+########################################################
 
 ln -s $scriptpath/custom ~/.oh-my-zsh/custom > /dev/null 2>&1
 
@@ -36,6 +56,8 @@ if [ $? -eq 0 ]; then
 else
   echo 'Skipping zsh customization'
 fi
+
+########################################################
 
 mkdir ~/.bin > /dev/null 2>&1
 
