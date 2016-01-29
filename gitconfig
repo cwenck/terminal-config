@@ -1,8 +1,8 @@
 [user]
-  email = cwenck@me.com
-  name = Connor Wenck
+    email = cwenck@me.com
+    name = Connor Wenck
 [core]
-  editor = vim
-  excludesfile = ~/.gitignore
+    editor = vim
+    excludesfile = ~/.gitignore
 [push]
-  default = simple
+    default = simple

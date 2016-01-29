@@ -1,12 +1,17 @@
 execute pathogen#infect()
 
+let tabsize = 4
+execute "set tabstop=".tabsize
+execute "set shiftwidth=".tabsize
+execute "set softtabstop=".tabsize
+
 set number
 set relativenumber
 
 augroup lineNums
-  autocmd!
-  autocmd InsertEnter * set norelativenumber
-  autocmd InsertLeave * set relativenumber
+    autocmd!
+    autocmd InsertEnter * set norelativenumber
+    autocmd InsertLeave * set relativenumber
 augroup END
 
 colorscheme molokai
@@ -14,17 +19,14 @@ colorscheme molokai
 set background=dark
 
 set nocompatible
-set softtabstop=2
-set tabstop=2
 set backspace=indent,eol,start
 set expandtab
-set shiftwidth=2
 set showmatch
 set mouse=a
 if has("mouse_sgr")
-  set ttymouse=sgr
+    set ttymouse=sgr
 else
-  set ttymouse=xterm2
+    set ttymouse=xterm2
 end
 syntax enable
 
@@ -37,3 +39,4 @@ set statusline+=%f
 set ls=2
 
 set linebreak
+set autoindent
