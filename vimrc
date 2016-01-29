@@ -40,3 +40,5 @@ set ls=2
 
 set linebreak
 set autoindent
+
+filetype indent on

@@ -2,7 +2,7 @@
 alias dsk='cd ~/Desktop/'
 alias dropbox='cd ~/Dropbox/'
 alias dl='cd ~/Downloads/'
-alias home='cd ~'
+alias home='cd'
 alias doc='cd ~/Documents/'
 alias cl='clear'
 alias app='cd /Applications/'
@@ -14,6 +14,17 @@ alias zshconfig='cd ~/.oh-my-zsh/custom/'
 alias cfg='cd ~/.sys-config/'
 alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
+
+# GCC Aliases
+
+
+alias gccrun=gccAndRun
+alias gccr=gccAndRun
+function gccAndRun(){
+    gcc $1
+    ./a.out
+}
+
 
 #Git Aliases
 alias gits='git status'
@@ -61,44 +72,44 @@ alias robotssh='ssh connor@192.168.56.101'
 
 #Function Aliases
 changeDirAndList(){
-  cd $1
-  clear
-  ls
+    cd $1
+    clear
+    ls
 }
 alias cdl=changeDirAndList
 
 mvToTrash(){
-  for arg in $*
-  do
-    mv $arg ~/.Trash
-  done
+    for arg in $*
+    do
+        mv $arg ~/.Trash
+    done
 }
 alias trash=mvToTrash
 
 pushDirList(){
-  pushd $1
-  clear
-  ls
+    pushd $1
+    clear
+    ls
 }
 alias pushdl=pushDirList
 alias push=pushDirList
 
 popDirList(){
-  popd $1
-  clear
-  ls
+    popd $1
+    clear
+    ls
 }
 alias popdl=popDirList
 alias pop=popDirList
 
 ranger-cd(){
-  tempfile='/tmp/tmprangerdir'
-  ranger --choosedir="$tempfile" "${@:-$(pwd)}"
-  test -f "$tempfile" &&
-  if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
-    cd -- "$(cat "$tempfile")"
-  fi
-  rm -f -- "$tempfile"
+    tempfile='/tmp/tmprangerdir'
+    ranger --choosedir="$tempfile" "${@:-$(pwd)}"
+    test -f "$tempfile" &&
+    if [ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]; then
+        cd -- "$(cat "$tempfile")"
+    fi
+    rm -f -- "$tempfile"
 }
 alias rcd=ranger-cd
 alias cdr=ranger-cd
