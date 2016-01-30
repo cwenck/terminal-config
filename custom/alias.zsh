@@ -15,9 +15,11 @@ alias cfg='cd ~/.sys-config/'
 alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
 
+
+#Programing Directories
+alias pydir='cd ~/Dropbox/Programming/Python/'
+
 # GCC Aliases
-
-
 alias gccrun=gccAndRun
 alias gccr=gccAndRun
 function gccAndRun(){
