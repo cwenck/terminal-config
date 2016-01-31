@@ -17,7 +17,10 @@ alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3
 
 
 #Programing Directories
+alias code='cd ~/Dropbox/Programming/'
 alias pydir='cd ~/Dropbox/Programming/Python/'
+alias cdir='cd ~/Dropbox/Programming/C/'
+
 
 # GCC Aliases
 alias gccrun=gccAndRun
