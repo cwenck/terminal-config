@@ -1,1 +1,1 @@
-plugins=(git brew brew-cask vagrant)
+plugins=(git brew brew-cask screen colored-man-pages vagrant)
