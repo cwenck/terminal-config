@@ -58,7 +58,6 @@ alias cowsays='clear;cowsay'
 alias figlet='clear;figlet'
 alias blktxt='clear;figlet'
 alias scalpel='scalpel -c ~/.cyber/scalpel.conf'
-alias axel='axel -n 4'
 alias waldo='python ~/.cyber/waldo/waldo.py'
 alias tac='gtac'
 
