@@ -40,7 +40,7 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles false; killal
 
 #UMD SSH
 alias grace='ssh cwenck@linux.grace.umd.edu'
-
+alias xgrace='ssh -X cwenck@linux.grace.umd.edu'
 #ACES
 alias aces='ssh cwenck@acesclass.umd.edu -p5044'
 
