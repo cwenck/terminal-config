@@ -53,6 +53,7 @@ alias refresh='. ~/.zshrc'
 alias viewdir='ranger'
 alias brewfix='brew update && brew upgrade -v && brew prune && brew cleanup && brew cask cleanup'
 alias cpumodel='sysctl -n machdep.cpu.brand_string'
+alias sysinfo='archey'
 alias zshupgrade='upgrade_oh_my_zsh' 
 
 #Defaults for Commands
