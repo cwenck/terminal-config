@@ -83,14 +83,6 @@ changeDirAndList(){
 }
 alias cdl=changeDirAndList
 
-mvToTrash(){
-    for arg in $*
-    do
-        mv $arg ~/.Trash
-    done
-}
-alias trash=mvToTrash
-
 pushDirList(){
     pushd $1
     clear
