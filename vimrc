@@ -1,4 +1,17 @@
-execute pathogen#infect()
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-commentary'
+
+call vundle#end()
+filetype indent plugin on
 
 " Spaces instead of tabs
 let tabsize = 4
@@ -51,7 +64,6 @@ set linebreak
 
 " Indent
 set autoindent
-filetype indent plugin on
 
 " Keyboard Mappings "
 "-------------------"

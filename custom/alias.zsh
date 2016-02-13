@@ -21,6 +21,9 @@ alias code='cd ~/Dropbox/Programming/'
 alias pydir='cd ~/Dropbox/Programming/Python/'
 alias cdir='cd ~/Dropbox/Programming/C/'
 
+#Vagrant Aliases
+alias vhome='~/VagrantBoxes'
+alias vstat='vagrant global-status'
 
 # GCC Aliases
 alias gccrun=gccAndRun
