@@ -9,6 +9,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-commentary'
+Plugin 'vim-airline/vim-airline'
+
 
 call vundle#end()
 filetype indent plugin on
