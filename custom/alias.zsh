@@ -38,8 +38,11 @@ function gccAndRun(){
 alias gits='git status'
 
 #Finder Aliases
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles true; killall Finder'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles false; killall Finder'
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles -bool true; killall Finder'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles -bool false; killall Finder'
+
+alias showPathBar='defaults write com.apple.finder ShowPathbar -bool true; killall Finder'
+alias hidePathBar='defaults write com.apple.finder ShowPathbar -bool false; killall Finder'
 
 #UMD SSH
 alias grace='ssh cwenck@linux.grace.umd.edu'
