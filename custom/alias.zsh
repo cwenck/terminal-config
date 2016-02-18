@@ -57,11 +57,14 @@ alias trashdl='mv ~/Downloads/* ~/.Trash'
 alias dlclear='mv ~/Downloads/* ~/.Trash'
 alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
+
+# OSX Power
 alias off='sudo poweroff'
 alias poweroff='sudo poweroff'
 alias shutdown='sudo poweroff'
 alias reboot='sudo reboot'
 alias restart='sudo reboot'
+alias sleep='pmset sleepnow'
 
 #alias starwars='telnet towel.blinkenlights.nl'
 alias viewdir='ranger'
