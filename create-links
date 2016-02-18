@@ -9,6 +9,16 @@ fi
 ########################################################
 ########################################################
 
+ln -s $scriptpath/custom ~/.oh-my-zsh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+  echo 'Linked custom to ~/.oh-my-zsh'
+else
+  echo 'Skipping linking custom to ~/.oh-my-zsh'
+fi
+
+########################################################
+
 ln -s $scriptpath/gitconfig ~/.gitconfig > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
@@ -32,7 +42,7 @@ fi
 ln -s $scriptpath/vimrc ~/.vimrc > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-  echo 'Created .vimrc'
+    echo 'Created .vimrc'
 else
   echo 'Skipping .vimrc'
 fi

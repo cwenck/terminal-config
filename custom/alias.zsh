@@ -44,6 +44,9 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles -bool false; 
 alias showPathBar='defaults write com.apple.finder ShowPathbar -bool true; killall Finder'
 alias hidePathBar='defaults write com.apple.finder ShowPathbar -bool false; killall Finder'
 
+alias hideDesktop='defaults write com.apple.finder CreateDesktop -bool false'
+alias showDesktop='defaults write com.apple.finder CreateDesktop -bool true'
+
 #UMD SSH
 alias grace='ssh cwenck@linux.grace.umd.edu'
 alias xgrace='ssh -X cwenck@linux.grace.umd.edu'
