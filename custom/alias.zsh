@@ -46,9 +46,13 @@ alias hidePathBar='defaults write com.apple.finder ShowPathbar -bool false; kill
 alias hideDesktop='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
 alias showDesktop='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
 
+#Docker Aliases
+alias dockerUp='source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
+
 #UMD SSH
 alias grace='ssh cwenck@linux.grace.umd.edu'
 alias xgrace='ssh -X cwenck@linux.grace.umd.edu'
+
 #ACES
 alias aces='ssh cwenck@acesclass.umd.edu -p5044'
 
@@ -59,9 +63,8 @@ alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
 
 # OSX Power
-alias off='sudo poweroff'
-alias poweroff='sudo poweroff'
-alias shutdown='sudo poweroff'
+alias poweroff='sudo shutdown -h now'
+alias off='sudo shutdown -h now'
 alias reboot='sudo reboot'
 alias restart='sudo reboot'
 alias sleep='pmset sleepnow'
