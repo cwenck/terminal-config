@@ -15,7 +15,6 @@ alias cfg='cd ~/.sys-config/'
 alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
 
-
 #Programing Directories
 alias code='cd ~/Dropbox/Programming/'
 alias pydir='cd ~/Dropbox/Programming/Python/'
@@ -58,6 +57,12 @@ alias trashdl='mv ~/Downloads/* ~/.Trash'
 alias dlclear='mv ~/Downloads/* ~/.Trash'
 alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
+alias off='sudo poweroff'
+alias poweroff='sudo poweroff'
+alias shutdown='sudo poweroff'
+alias reboot='sudo reboot'
+alias restart='sudo reboot'
+
 #alias starwars='telnet towel.blinkenlights.nl'
 alias viewdir='ranger'
 alias brewfix='brew update && brew upgrade -v && brew prune && brew cleanup && brew cask cleanup'
