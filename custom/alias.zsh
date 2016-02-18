@@ -47,7 +47,7 @@ alias hideDesktop='defaults write com.apple.finder CreateDesktop -bool false; ki
 alias showDesktop='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
 
 #Docker Aliases
-alias dockerUp='source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
+alias dockerInit='source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
 
 #UMD SSH
 alias grace='ssh cwenck@linux.grace.umd.edu'
