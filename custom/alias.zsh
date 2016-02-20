@@ -26,6 +26,10 @@ alias vstat='vagrant global-status'
 alias vstart='vagrant up && vagrant ssh'
 alias vrestart='vagrant halt && vagrant up && vagrant ssh'
 
+#Docker Aliases
+alias dockerInit='source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
+alias dockerOff='VBoxManage controlvm default poweroff'
+
 # GCC Aliases
 alias gccrun=gccAndRun
 alias gccr=gccAndRun
@@ -47,9 +51,6 @@ alias hidePathBar='defaults write com.apple.finder ShowPathbar -bool false; kill
 
 alias hideDesktop='defaults write com.apple.finder CreateDesktop -bool false; killall Finder'
 alias showDesktop='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
-
-#Docker Aliases
-alias dockerInit='source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
 
 #UMD SSH
 alias grace='ssh cwenck@linux.grace.umd.edu'
