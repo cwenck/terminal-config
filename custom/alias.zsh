@@ -23,6 +23,8 @@ alias cdir='cd ~/Dropbox/Programming/C/'
 #Vagrant Aliases
 alias vhome='~/VagrantBoxes'
 alias vstat='vagrant global-status'
+alias vstart='vagrant up && vagrant ssh'
+alias vrestart='vagrant halt && vagrant up && vagrant ssh'
 
 # GCC Aliases
 alias gccrun=gccAndRun
@@ -63,10 +65,9 @@ alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
 
 # OSX Power
-alias poweroff='sudo shutdown -h now'
-alias off='sudo shutdown -h now'
-alias reboot='sudo reboot'
-alias restart='sudo reboot'
+alias off='osascript -e "tell app \"System Events\" to shut down"'
+alias reboot='osascript -e "tell app \"System Events\" to restart"'
+alias retart='osascript -e "tell app \"System Events\" to restart"'
 alias sleep='pmset sleepnow'
 
 #alias starwars='telnet towel.blinkenlights.nl'
