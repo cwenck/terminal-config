@@ -27,8 +27,8 @@ alias vstart='vagrant up && vagrant ssh'
 alias vrestart='vagrant halt && vagrant up && vagrant ssh'
 
 #Docker Aliases
-alias dockerInit='source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
-alias dockerOff='VBoxManage controlvm default poweroff'
+alias dockerStart='source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
+alias dockerStop='VBoxManage controlvm default poweroff'
 
 # GCC Aliases
 alias gccrun=gccAndRun
