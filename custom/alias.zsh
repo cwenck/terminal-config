@@ -81,7 +81,7 @@ alias viewdir='ranger'
 alias brewfix='brew update && brew upgrade -v && brew prune && brew cleanup && brew cask cleanup'
 alias cpumodel='sysctl -n machdep.cpu.brand_string'
 alias sysinfo='archey'
-alias zshupgrade='upgrade_oh_my_zsh' 
+alias zshupgrade='upgrade_oh_my_zsh && ~/.sys-config/create-links' 
 
 #Defaults for Commands
 alias cowsay='clear;cowsay'
