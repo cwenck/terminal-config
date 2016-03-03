@@ -3,7 +3,7 @@
 scriptpath="$(dirname ${BASH_SOURCE[0]})"
 
 if [[ $scriptpath == "." ]]; then
-  scriptpath=$(pwd)
+    scriptpath=$(pwd)
 fi
 
 ########################################################
@@ -12,9 +12,9 @@ fi
 ln -s $scriptpath/custom ~/.oh-my-zsh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-  echo 'Linked custom to ~/.oh-my-zsh'
+    echo 'Linked custom to ~/.oh-my-zsh'
 else
-  echo 'Skipping linking custom to ~/.oh-my-zsh'
+    echo 'Skipping linking custom to ~/.oh-my-zsh'
 fi
 
 ########################################################
@@ -22,9 +22,9 @@ fi
 ln -s $scriptpath/gitconfig ~/.gitconfig > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-  echo 'Created global .gitconfig'
+    echo 'Created global .gitconfig'
 else
-  echo 'Skipping global .gitconfig'
+    echo 'Skipping global .gitconfig'
 fi
 
 ########################################################
@@ -32,9 +32,9 @@ fi
 ln -s $scriptpath/gitignore ~/.gitignore > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-  echo 'Created global .gitignore'
+    echo 'Created global .gitignore'
 else
-  echo 'Skipping global .gitignore'
+    echo 'Skipping global .gitignore'
 fi
 
 ########################################################
@@ -44,17 +44,16 @@ ln -s $scriptpath/vimrc ~/.vimrc > /dev/null 2>&1
 if [ $? -eq 0 ]; then
     echo 'Created .vimrc'
 else
-  echo 'Skipping .vimrc'
+    echo 'Skipping .vimrc'
 fi
 
 ########################################################
 
-ln -s $scriptpath/vim ~/.vim > /dev/null 2>&1
-
-if [ $? -eq 0 ]; then
-  echo 'Created .vim directory'
+if [ ! -d ~/.vim ]; then
+    ln -s $scriptpath/vim ~/.vim > /dev/null 2>&1
+    echo 'Created .vim directory'
 else
-  echo 'Skipping .vim directory'
+    echo 'Skipping .vim directory'
 fi
 
 ########################################################
@@ -62,9 +61,9 @@ fi
 ln -s $scriptpath/custom ~/.oh-my-zsh/custom > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-  echo 'Creating personal zsh customizations'
+    echo 'Creating personal zsh customizations'
 else
-  echo 'Skipping zsh customization'
+    echo 'Skipping zsh customization'
 fi
 
 ########################################################
@@ -72,7 +71,7 @@ fi
 mkdir ~/.bin > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-  echo 'Creating ~/.bin'
+    echo 'Creating ~/.bin'
 else
-  echo 'Skipping creation of ~/.bin'
+    echo 'Skipping creation of ~/.bin'
 fi

@@ -58,6 +58,7 @@ set showcmd
 set smartcase
 set ignorecase
 set hlsearch
+set incsearch
 
 set statusline+=%f
 set ls=2

@@ -15,10 +15,14 @@ alias cfg='cd ~/.sys-config/'
 alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
 
+#Honeypot Aliases
+alias vzhost='ssh -p 52848 hp@aceslab.umd.edu'
+
 #Programing Directories
 alias code='cd ~/Dropbox/Programming/'
 alias pydir='cd ~/Dropbox/Programming/Python/'
 alias cdir='cd ~/Dropbox/Programming/C/'
+alias clookup='man 3'
 
 #Vagrant Aliases
 alias vhome='~/VagrantBoxes'
@@ -29,7 +33,7 @@ alias vrestart='vagrant halt && vagrant up && vagrant ssh'
 #Docker Aliases
 alias dockerStartup='source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
 alias dockerHalt='VBoxManage controlvm default poweroff'
-function dockerssh {
+function dssh {
     docker exec -it $1 bash
 }
 
