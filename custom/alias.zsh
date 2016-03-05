@@ -34,6 +34,9 @@ alias vrestart='vagrant halt && vagrant up && vagrant ssh'
 alias dockerStartup='source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
 alias dockerHalt='VBoxManage controlvm default poweroff'
 function dssh {
+    if [ "$DOCKER_HOST" = "" ]; then
+        source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh" 
+    fi
     docker exec -it $1 bash
 }
 
