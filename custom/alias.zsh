@@ -31,12 +31,10 @@ alias vstart='vagrant up && vagrant ssh'
 alias vrestart='vagrant halt && vagrant up && vagrant ssh'
 
 #Docker Aliases
-alias dockerStartup='source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
+alias dockerStartup='exec "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'
 alias dockerHalt='VBoxManage controlvm default poweroff'
 function dssh {
-    if [ "$DOCKER_HOST" = "" ]; then
-        source "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh" 
-    fi
+    docker start $1 > /dev/null 2>&1
     docker exec -it $1 bash
 }
 

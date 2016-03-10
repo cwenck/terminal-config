@@ -6,11 +6,12 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-commentary'
+Plugin 'Raimondi/delimitMate'
+Plugin 'craigemery/vim-autotag'
+Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
-
 
 call vundle#end()
 filetype indent plugin on
