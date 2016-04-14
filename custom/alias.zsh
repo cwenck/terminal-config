@@ -23,6 +23,7 @@ alias code='cd ~/Dropbox/Programming/'
 alias pydir='cd ~/Dropbox/Programming/Python/'
 alias cdir='cd ~/Dropbox/Programming/C/'
 alias clookup='man 3'
+alias syslookup='man 2'
 
 #Vagrant Aliases
 alias vhome='~/VagrantBoxes'
