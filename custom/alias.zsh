@@ -1,5 +1,5 @@
 #Tmp SSH Alias
-alias tmp='ssh -p 49759 root@aceslab.umd.edu'
+alias tmp='ssh -p 59206 root@aceslab.umd.edu'
 
 #Common Directory Aliases
 alias dsk='cd ~/Desktop/'
@@ -19,12 +19,13 @@ alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
 
 #Honeypot Aliases
-alias vzhost='ssh -p 49759 hp@aceslab.umd.edu'
+alias vzhost='ssh -p 45818 hp@aceslab.umd.edu'
 
 #Programing Directories
 alias code='cd ~/Dropbox/Programming/'
 alias pydir='cd ~/Dropbox/Programming/Python/'
 alias cdir='cd ~/Dropbox/Programming/C/'
+alias jsndir='cd ~/Dropbox/Programming/Node/'
 alias clookup='man 3'
 alias syslookup='man 2'
 
@@ -63,8 +64,7 @@ alias hideDesktop='defaults write com.apple.finder CreateDesktop -bool false; ki
 alias showDesktop='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
 
 #UMD SSH
-alias grace='ssh cwenck@linux.grace.umd.edu'
-alias xgrace='ssh -X cwenck@linux.grace.umd.edu'
+alias grace='ssh -X cwenck@grace1.umd.edu'
 
 #ACES
 alias aces='ssh cwenck@acesclass.umd.edu -p5044'
