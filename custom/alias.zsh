@@ -64,7 +64,8 @@ alias hideDesktop='defaults write com.apple.finder CreateDesktop -bool false; ki
 alias showDesktop='defaults write com.apple.finder CreateDesktop -bool true; killall Finder'
 
 #UMD SSH
-alias grace='ssh -X cwenck@grace1.umd.edu'
+alias grace='ssh cwenck@grace1.umd.edu'
+alias xgrace='ssh -X cwenck@grace1.umd.edu'
 
 #ACES
 alias aces='ssh cwenck@acesclass.umd.edu -p5044'
