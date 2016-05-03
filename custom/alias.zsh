@@ -19,7 +19,7 @@ alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
 
 #Honeypot Aliases
-alias vzhost='ssh -p 45818 hp@aceslab.umd.edu'
+alias vzhost='ssh -p 48417 hp@aceslab.umd.edu'
 
 #Programing Directories
 alias code='cd ~/Dropbox/Programming/'

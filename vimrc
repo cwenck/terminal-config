@@ -13,6 +13,8 @@ Plugin 'craigemery/vim-autotag'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
 
+Plugin 'atelierbram/vim-colors_duotones'
+
 call vundle#end()
 filetype indent plugin on
 
@@ -34,9 +36,17 @@ augroup END
 
 " Color Scheme
 
-colorscheme molokai
 syntax enable
 set background=dark
+set t_Co=256
+let base16colorspace=256
+
+colorscheme molokai
+" colorscheme luna-term
+" colors duotone-darksea
+
+highlight Normal ctermbg=NONE " use terminal background
+highlight nonText ctermbg=NONE " use terminal background
 
 " Other
 
