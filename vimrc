@@ -14,6 +14,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
 
 Plugin 'atelierbram/vim-colors_duotones'
+Plugin 'chriskempson/base16-vim'
 
 call vundle#end()
 filetype indent plugin on

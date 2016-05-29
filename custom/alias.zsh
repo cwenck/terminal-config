@@ -1,5 +1,5 @@
 #Tmp SSH Alias
-alias tmp='ssh -p 59206 root@aceslab.umd.edu'
+alias tmp='ssh -p 46916 root@aceslab.umd.edu'
 
 #Common Directory Aliases
 alias dsk='cd ~/Desktop/'
@@ -19,7 +19,7 @@ alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
 
 #Honeypot Aliases
-alias vzhost='ssh -p 48417 hp@aceslab.umd.edu'
+alias vzhost='ssh -p 35288 hp@aceslab.umd.edu'
 
 #Programing Directories
 alias code='cd ~/Dropbox/Programming/'
