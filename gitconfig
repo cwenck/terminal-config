@@ -3,6 +3,12 @@
     name = Connor Wenck
 [core]
     editor = vim
-    excludesfile = ~/.gitignore
+	excludesfile = /Users/connor/.gitignore
 [push]
     default = simple
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.1/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
