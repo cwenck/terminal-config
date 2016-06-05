@@ -1,1 +1,1 @@
-export QMAKE=/usr/local/bin/qmake
+export QMAKE=/usr/local/opt/qt5/bin/qmake
