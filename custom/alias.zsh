@@ -88,7 +88,7 @@ alias brewfix='brew update && brew upgrade -v && brew prune && brew cleanup -s'
 alias brewClean='brew cleanup -s'
 alias cpumodel='sysctl -n machdep.cpu.brand_string'
 alias sysinfo='archey'
-alias zshupgrade='upgrade_oh_my_zsh && ~/.sys-config/create-links' 
+alias zshupgrade='rm /Users/connor/.oh-my-zsh/custom && upgrade_oh_my_zsh && ~/.sys-config/create-links' 
 
 #Defaults for Commands
 alias cowsay='clear;cowsay'
