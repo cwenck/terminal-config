@@ -12,6 +12,8 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'craigemery/vim-autotag'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
+Plugin 'elzr/vim-json'
+Plugin 'terryma/vim-multiple-cursors' 
 
 Plugin 'atelierbram/vim-colors_duotones'
 Plugin 'chriskempson/base16-vim'
@@ -79,6 +81,9 @@ set linebreak
 
 " Indent
 set autoindent
+
+" JSON show all quotes
+let g:vim_json_syntax_conceal = 0
 
 " Keyboard Mappings "
 "-------------------"
