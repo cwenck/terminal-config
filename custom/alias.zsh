@@ -18,14 +18,15 @@ alias cfg='cd ~/.sys-config/'
 alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
 
-#Honeypot Aliases
-alias vzhost='ssh -p 35288 hp@aceslab.umd.edu'
 
 #Programing Directories
 alias code='cd ~/Dropbox/Programming/'
 alias pydir='cd ~/Dropbox/Programming/Python/'
 alias cdir='cd ~/Dropbox/Programming/C/'
 alias jsndir='cd ~/Dropbox/Programming/Node/'
+
+alias 330="cd ~/Connor\'s\ Stuff/College/Fall\ 2016/CMSC\ 330/code/ruby"
+
 alias clookup='man 3'
 alias syslookup='man 2'
 
