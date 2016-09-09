@@ -1,6 +1,6 @@
 [user]
-	email = none
-	name = Connor
+	email = connorwenck@gmail.com
+	name = Connor Wenck
 [core]
     editor = vim
 	excludesfile = /Users/connor/.gitignore
