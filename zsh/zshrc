@@ -1,0 +1,25 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+
+source ~/.sys-config/zsh/config/alias.zsh
+
+# Load Z
+. /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
+
+# Allow typing 'dir' to translate to 'cd dir'
+setopt AUTO_CD
+
+# Disable the prompt asking to correct commands from zsh
+unsetopt correct

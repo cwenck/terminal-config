@@ -6,18 +6,50 @@ if [[ $scriptpath == "." ]]; then
     scriptpath=$(pwd)
 fi
 
+# Dotfiles should not start with dots
+function linkToHome() {
+    path=$1
+    name=$(basename $path)
+
+    ln -s $scriptpath/$path ~/.$name > /dev/null 2>&1
+
+    if [ $? -eq 0 ]; then
+        echo "Linked $name"
+    else
+        echo "Skipping linking $name"
+    fi
+}
+
 ########################################################
 ########################################################
 
-ln -s $scriptpath/custom ~/.oh-my-zsh > /dev/null 2>&1
 
-if [ $? -eq 0 ]; then
-    echo 'Linked custom to ~/.oh-my-zsh'
-else
-    echo 'Skipping linking custom to ~/.oh-my-zsh'
-fi
+linkToHome "zsh/zshrc"
+linkToHome "zsh/zpreztorc"
+linkToHome "zsh/zprofile"
+linkToHome "zsh/zshenv"
+linkToHome "zsh/zlogin"
+linkToHome "zsh/zlogout"
+
+#ln -s $scriptpath/custom ~/.oh-my-zsh > /dev/null 2>&1
+
+#if [ $? -eq 0 ]; then
+#    echo 'Linked custom to ~/.oh-my-zsh'
+#else
+#    echo 'Skipping linking custom to ~/.oh-my-zsh'
+#fi
 
 ########################################################
+
+#ln -s $scriptpath/zsh/zshrc ~/.zshrc > /dev/null 2>&1
+
+#if [ $? -eq 0 ]; then
+#    echo 'Linked zshrc'
+#else
+#    echo 'Skipping linking zshrc'
+#fi
+
+#########################################################
 
 ln -s $scriptpath/gitconfig ~/.gitconfig > /dev/null 2>&1
 
@@ -54,16 +86,6 @@ if [ ! -d ~/.vim ]; then
     echo 'Created .vim directory'
 else
     echo 'Skipping .vim directory'
-fi
-
-########################################################
-
-ln -s $scriptpath/custom ~/.oh-my-zsh/custom > /dev/null 2>&1
-
-if [ $? -eq 0 ]; then
-    echo 'Creating personal zsh customizations'
-else
-    echo 'Skipping zsh customization'
 fi
 
 ########################################################
