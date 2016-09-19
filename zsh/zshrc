@@ -23,3 +23,6 @@ setopt AUTO_CD
 
 # Disable the prompt asking to correct commands from zsh
 unsetopt correct
+
+# OPAM configuration
+. /Users/connor/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

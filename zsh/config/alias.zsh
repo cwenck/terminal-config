@@ -24,7 +24,7 @@ alias pydir='cd ~/Dropbox/Programming/Python/'
 alias cdir='cd ~/Dropbox/Programming/C/'
 alias jsndir='cd ~/Dropbox/Programming/Node/'
 
-alias 330="cd ~/Connor\'s\ Stuff/College/Fall\ 2016/CMSC\ 330/code/ruby"
+alias 330="cd ~/Connor\'s\ Stuff/College/Fall\ 2016/CMSC\ 330/code/"
 
 alias clookup='man 3'
 alias syslookup='man 2'
@@ -58,9 +58,11 @@ alias dlclear='trash ~/Downloads/*'
 alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
 
+alias brewFix='brew update && brew upgrade -v && brew prune && brew cleanup -s && brew cask cleanup'
+alias brewClean='brew cleanup -s && brew cask cleanup'
+alias brewDoctor='brew doctor && brew cask doctor'
+
 #alias starwars='telnet towel.blinkenlights.nl'
-alias brewfix='brew update && brew upgrade -v && brew prune && brew cleanup -s'
-alias brewClean='brew cleanup -s'
 alias cpumodel='sysctl -n machdep.cpu.brand_string'
 alias sysinfo='archey'
 
