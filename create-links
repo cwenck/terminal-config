@@ -20,9 +20,37 @@ function linkToHome() {
     fi
 }
 
+function linkDirToHome() {
+    dir_path=$1
+    name=$(basename $dir_path)
+
+    if [ ! -d ~/.$name ]; then
+        ln -s $scriptpath/${dir_path} ~/.$name > /dev/null 2>&1
+        echo "Linked .${name} directory"
+    else
+        echo "Skipping linking .${name} directory"
+    fi
+}
+
+function tryMakeDir() {
+    dir_path=$1
+    name=$(basename $dir_path)
+
+    mkdir $dir_path > /dev/null 2>&1
+    if [ $? -eq 0 ]; then
+        echo "Created $dir_path"
+    else
+        echo "Skipping creation of $dir_path directory"
+    fi
+}
+
+########################################################
 ########################################################
 ########################################################
 
+tryMakeDir "$HOME/.usr"
+tryMakeDir "$HOME/.usr/bin"
+tryMakeDir "$HOME/.usr/lib"
 
 linkToHome "zsh/zshrc"
 linkToHome "zsh/zpreztorc"
@@ -31,70 +59,9 @@ linkToHome "zsh/zshenv"
 linkToHome "zsh/zlogin"
 linkToHome "zsh/zlogout"
 
-#ln -s $scriptpath/custom ~/.oh-my-zsh > /dev/null 2>&1
+linkToHome "tmux.conf"
 
-#if [ $? -eq 0 ]; then
-#    echo 'Linked custom to ~/.oh-my-zsh'
-#else
-#    echo 'Skipping linking custom to ~/.oh-my-zsh'
-#fi
+linkToHome "gitconfig"
+linkToHome "vimrc"
+linkDirToHome "vim"
 
-########################################################
-
-#ln -s $scriptpath/zsh/zshrc ~/.zshrc > /dev/null 2>&1
-
-#if [ $? -eq 0 ]; then
-#    echo 'Linked zshrc'
-#else
-#    echo 'Skipping linking zshrc'
-#fi
-
-#########################################################
-
-ln -s $scriptpath/gitconfig ~/.gitconfig > /dev/null 2>&1
-
-if [ $? -eq 0 ]; then
-    echo 'Created global .gitconfig'
-else
-    echo 'Skipping global .gitconfig'
-fi
-
-########################################################
-
-ln -s $scriptpath/gitignore ~/.gitignore > /dev/null 2>&1
-
-if [ $? -eq 0 ]; then
-    echo 'Created global .gitignore'
-else
-    echo 'Skipping global .gitignore'
-fi
-
-########################################################
-
-ln -s $scriptpath/vimrc ~/.vimrc > /dev/null 2>&1
-
-if [ $? -eq 0 ]; then
-    echo 'Created .vimrc'
-else
-    echo 'Skipping .vimrc'
-fi
-
-########################################################
-
-if [ ! -d ~/.vim ]; then
-    ln -s $scriptpath/vim ~/.vim > /dev/null 2>&1
-    echo 'Created .vim directory'
-else
-    echo 'Skipping .vim directory'
-fi
-
-########################################################
-
-mkdir ~/.usr/bin > /dev/null 2>&1
-mkdir ~/.usr/lib > /dev/null 2>&1
-
-if [ $? -eq 0 ]; then
-    echo 'Creating ~/.usr'
-else
-    echo 'Skipping creation of ~/.usr'
-fi

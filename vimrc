@@ -82,6 +82,10 @@ set linebreak
 " Indent
 set autoindent
 
+" Copy Paste to System Clipboard
+set clipboard=unnamed
+
+
 " JSON show all quotes
 let g:vim_json_syntax_conceal = 0
 
