@@ -1,14 +1,3 @@
-#
-# A stripped-down sorin theme.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#   connor Symonds <connor@connorsymonds.com>
-#
-# Screenshots:
-#   http://i.imgur.com/nBEEZ.png
-#
-
 # Load dependencies.
 pmodload 'helper'
 
@@ -54,10 +43,7 @@ function prompt_connor_setup {
 
   # Set editor-info parameters.
   zstyle ':prezto:module:editor:info:completing' format '%B%F{red}...%f%b'
-  # zstyle ':prezto:module:editor:info:keymap:primary' format '%B%(?;%{%F{green}%} ;%{%F{red}%} )❯%f%b'
-  # zstyle ':prezto:module:editor:info:keymap:primary' format '%B%F{white}%❯%f%b'
   zstyle ':prezto:module:editor:info:keymap:primary' format '%F{white} →%f'
-  # zstyle ':prezto:module:editor:info:keymap:primary:overwrite' format ' %F{red}♺%f'
   zstyle ':prezto:module:editor:info:keymap:alternate' format '%F{blue} (CMD)%f%F{white} →%f'
 
   # Set git-info parameters.
@@ -67,15 +53,12 @@ function prompt_connor_setup {
   zstyle ':prezto:module:git:info:remote' format '%F{red}%R%f'
   zstyle ':prezto:module:git:info:ahead' format ' %B%F{yellow}↑%f%b'
   zstyle ':prezto:module:git:info:behind' format ' %B%F{yellow}↓%f%b'
-  # zstyle ':prezto:module:git:info:ahead' format ' %F{yellow}⬆%f'
-  # zstyle ':prezto:module:git:info:behind' format ' %F{yellow}⬇%f'
   zstyle ':prezto:module:git:info:added' format '%B%F{green}●%f%b'
   zstyle ':prezto:module:git:info:modified' format '%B%F{yellow}●%f%b'
   zstyle ':prezto:module:git:info:untracked' format '%B%F{red}●%f%b'
   zstyle ':prezto:module:git:info:keys' format \
     'branch' ' %F{green}[%f%b%a%m%u%F{green}]%f' \
     'rprompt' ' %R%A%B'
-
 
   # Define prompts.
   PROMPT='%F{red}${_prompt_connor_pwd}%f${git_info[branch]}${editor_info[keymap]} '

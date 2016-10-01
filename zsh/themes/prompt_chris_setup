@@ -1,14 +1,3 @@
-#
-# A stripped-down chris theme.
-#
-# Authors:
-#   chris Ionescu <chris.ionescu@gmail.com>
-#   chris Symonds <chris@chrissymonds.com>
-#
-# Screenshots:
-#   http://i.imgur.com/nBEEZ.png
-#
-
 # Load dependencies.
 pmodload 'helper'
 
