@@ -1,29 +1,27 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'Valloric/YouCompleteMe' , { 'do': './install.py' }
+Plug 'tpope/vim-commentary'
+Plug 'Raimondi/delimitMate'
+Plug 'craigemery/vim-autotag'
+Plug 'Yggdroot/indentLine'
+Plug 'vim-airline/vim-airline'
+Plug 'elzr/vim-json'
+Plug 'terryma/vim-multiple-cursors' 
 
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'tpope/vim-commentary'
-Plugin 'Raimondi/delimitMate'
-Plugin 'craigemery/vim-autotag'
-Plugin 'Yggdroot/indentLine'
-Plugin 'vim-airline/vim-airline'
-Plugin 'elzr/vim-json'
-Plugin 'terryma/vim-multiple-cursors' 
+Plug 'atelierbram/vim-colors_duotones'
+Plug 'chriskempson/base16-vim'
 
-Plugin 'atelierbram/vim-colors_duotones'
-Plugin 'chriskempson/base16-vim'
+" Color Scheme Plugs
+Plug 'morhetz/gruvbox'
+Plug 'w0ng/vim-hybrid'
+Plug 'nanotech/jellybeans.vim'
 
-" Color Scheme Plugins
-Plugin 'morhetz/gruvbox'
-Plugin 'w0ng/vim-hybrid'
-Plugin 'nanotech/jellybeans.vim'
+call plug#end()
 
-call vundle#end()
 filetype indent plugin on
 
 " Spaces instead of tabs
