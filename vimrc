@@ -18,6 +18,11 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'atelierbram/vim-colors_duotones'
 Plugin 'chriskempson/base16-vim'
 
+" Color Scheme Plugins
+Plugin 'morhetz/gruvbox'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'nanotech/jellybeans.vim'
+
 call vundle#end()
 filetype indent plugin on
 
@@ -31,11 +36,11 @@ execute "set softtabstop=".tabsize
 set number
 set relativenumber
 
-augroup lineNums
-    autocmd!
-    autocmd InsertEnter * set norelativenumber
-    autocmd InsertLeave * set relativenumber
-augroup END
+" augroup lineNums
+"     autocmd!
+autocmd InsertEnter * set norelativenumber
+autocmd InsertLeave * set relativenumber
+" augroup END
 
 " Color Scheme
 
@@ -44,7 +49,10 @@ set background=dark
 set t_Co=256
 let base16colorspace=256
 
-colorscheme molokai
+
+" colorscheme jellybeans
+" colorscheme hybrid
+colorscheme molokai " Toby Color Scheme
 " colorscheme luna-term
 " colors duotone-darksea
 
@@ -61,7 +69,7 @@ set mouse=a
 if has("mouse_sgr")
     set ttymouse=sgr
 else
-    set ttymouse=xterm2
+    set ttymouse=xterm1
 end
 
 
@@ -89,8 +97,16 @@ set clipboard=unnamed
 " JSON show all quotes
 let g:vim_json_syntax_conceal = 0
 
-" Keyboard Mappings "
+" Vim Commentary Added Support
+autocmd FileType ocaml setlocal commentstring=(*\ %s\ *)
+
+
+"Keyboard Mappings "
 "-------------------"
+
+" Map Ctrl-C to Esc
+inoremap <C-c> <Esc> 
+vnoremap <C-c> <Esc> 
 
 " Press either Shift + Up or Shift + Down to move lines up or down
 nnoremap <S-down> :m .+1<CR>==

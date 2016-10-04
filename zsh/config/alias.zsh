@@ -17,6 +17,8 @@ alias cfg='cd ~/.sys-config/'
 alias cyber='cd ~/.cyber'
 alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3/Packages/User"'
 
+#Tmux Aliases
+alias mux='tmuxinator'
 
 #Programing Directories
 alias code='cd ~/Dropbox/Programming/'
