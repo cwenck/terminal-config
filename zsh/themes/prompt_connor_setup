@@ -77,9 +77,16 @@ function prompt_connor_setup {
   # zstyle ':prezto:module:git:info:renamed' format ' %%B%F{magenta}➜%f%%b'
   # zstyle ':prezto:module:git:info:stashed' format ' %%B%F{cyan}✭%f%%b'
   # zstyle ':prezto:module:git:info:unmerged' format ' %%B%F{yellow}═%f%%b'
-  zstyle ':prezto:module:git:info:added' format '%B%F{green}●%f%b'
-  zstyle ':prezto:module:git:info:modified' format '%B%F{yellow}●%f%b'
-  zstyle ':prezto:module:git:info:untracked' format '%B%F{red}●%f%b'
+  if [[ "$OSTYPE" == darwin* ]]; then
+    zstyle ':prezto:module:git:info:added' format '%B%F{green}●%f%b'
+    zstyle ':prezto:module:git:info:modified' format '%B%F{yellow}●%f%b'
+    zstyle ':prezto:module:git:info:untracked' format '%B%F{red}●%f%b'
+  else
+    zstyle ':prezto:module:git:info:added' format '%F{green}•%f'
+    zstyle ':prezto:module:git:info:modified' format '%F{yellow}•%f'
+    zstyle ':prezto:module:git:info:untracked' format '%F{red}•%f'
+  fi
+  
   zstyle ':prezto:module:git:info:keys' format \
     'branch' ' %F{green}[%f%b%a%m%u%F{green}]%f' \
     'rprompt' ' %R'
