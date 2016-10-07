@@ -1,23 +1,23 @@
 # Load dependencies.
 pmodload 'helper'
 
-function prompt_connor_pwd {
+function prompt_chris_pwd {
   local pwd="${PWD/#$HOME/~}"
 
   if [[ "$pwd" == (#m)[/~] ]]; then
-    _prompt_connor_pwd="$MATCH"
+    _prompt_chris_pwd="$MATCH"
     unset MATCH
   else
-    _prompt_connor_pwd="${pwd:t}"
+    _prompt_chris_pwd="${${${${(@j:/:M)${(@s:/:)pwd}##.#?}:h}%/}//\%/%%}/${${pwd:t}//\%/%%}"
   fi
 }
 
-function prompt_connor_precmd {
+function prompt_chris_precmd {
   setopt LOCAL_OPTIONS
   unsetopt XTRACE KSH_ARRAYS
 
   # Format PWD.
-  prompt_connor_pwd
+  prompt_chris_pwd
 
   # Get Git repository information.
   if (( $+functions[git-info] )); then
@@ -30,7 +30,7 @@ function prompt_connor_precmd {
   fi
 }
 
-function prompt_connor_setup {
+function prompt_chris_setup {
   setopt LOCAL_OPTIONS
   unsetopt XTRACE KSH_ARRAYS
   prompt_opts=(cr percent subst)
@@ -39,13 +39,13 @@ function prompt_connor_setup {
   autoload -Uz add-zsh-hook
 
   # Add hook for calling git-info before each command.
-  add-zsh-hook precmd prompt_connor_precmd
+  add-zsh-hook precmd prompt_chris_precmd
 
   # Set editor-info parameters.
   zstyle ':prezto:module:editor:info:completing' format '%B%F{red}...%f%b'
-  zstyle ':prezto:module:editor:info:keymap:primary' format '%F{white} →%f'
-  zstyle ':prezto:module:editor:info:keymap:alternate' format '%F{blue} (CMD)%f%F{white} →%f'
-
+  zstyle ':prezto:module:editor:info:keymap:primary' format ' %B%F{1}❯%F{3}❯%F{2}❯%f%b'
+  zstyle ':prezto:module:editor:info:keymap:alternate' format ' %B%F{2}❮%F{3}❮%F{1}❮%f%b'
+  
   # Set git-info parameters.
   zstyle ':prezto:module:git:info' verbose 'yes'
   zstyle ':prezto:module:git:info:branch' format '%F{green}%b%f'
@@ -53,6 +53,8 @@ function prompt_connor_setup {
   zstyle ':prezto:module:git:info:remote' format '%F{red}%R%f'
   zstyle ':prezto:module:git:info:ahead' format ' %B%F{yellow}↑%f%b'
   zstyle ':prezto:module:git:info:behind' format ' %B%F{yellow}↓%f%b'
+  # zstyle ':prezto:module:git:info:ahead' format ' %F{yellow}⬆%f'
+  # zstyle ':prezto:module:git:info:behind' format ' %F{yellow}⬇%f'
   zstyle ':prezto:module:git:info:added' format '%B%F{green}●%f%b'
   zstyle ':prezto:module:git:info:modified' format '%B%F{yellow}●%f%b'
   zstyle ':prezto:module:git:info:untracked' format '%B%F{red}●%f%b'
@@ -60,11 +62,12 @@ function prompt_connor_setup {
     'branch' ' %F{green}[%f%b%a%m%u%F{green}]%f' \
     'rprompt' ' %R%A%B'
 
+
   # Define prompts.
-  PROMPT='%F{red}${_prompt_connor_pwd}%f${git_info[branch]}${editor_info[keymap]} '
+  PROMPT='%F{blue}${_prompt_chris_pwd}%f${git_info[branch]}${editor_info[keymap]} '
   RPROMPT='${git_info[rprompt]}'
   SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
 }
 
-prompt_connor_setup "$@"
 
+prompt_chris_setup "$@"
