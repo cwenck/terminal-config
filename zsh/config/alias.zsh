@@ -62,9 +62,12 @@ alias dlclear='trash ~/Downloads/*'
 alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
 
+#Homebrew Aliases
 alias brewFix='brew update && brew upgrade -v && brew prune && brew cleanup -s && brew cask cleanup'
 alias brewClean='brew cleanup -s && brew cask cleanup'
 alias brewDoctor='brew doctor && brew cask doctor'
+alias vboxUpdate='brew update && brew cask uninstall --force virtualbox-extension-pack && brew cask uninstall --force virtualbox && brew cask install virtualbox && brew cask install virtualbox-extension-pack'
+
 
 #alias starwars='telnet towel.blinkenlights.nl'
 alias cpumodel='sysctl -n machdep.cpu.brand_string'
