@@ -16,7 +16,9 @@ fi
 source ~/.sys-config/zsh/config/alias.zsh
 
 # Load Z
-. /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
+if [[ "$OSTYPE" == darwin* ]]; then
+    . /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
+fi
 
 # Allow typing 'dir' to translate to 'cd dir'
 setopt AUTO_CD
