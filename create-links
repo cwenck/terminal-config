@@ -61,7 +61,14 @@ linkToHome "zsh/zlogout"
 
 linkToHome "tmux.conf"
 
-linkToHome "gitconfig"
+
+linkToHome "gitignore"
+if [[ $OSTYPE == darwin* ]]; then
+    linkToHome "apple_git/gitconfig"
+else
+    linkToHome "ubuntu_git/gitconfig"
+fi
+
 linkToHome "vimrc"
 linkDirToHome "vim"
 

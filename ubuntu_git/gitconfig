@@ -1,0 +1,10 @@
+[user]
+	email = connorwenck@gmail.com
+	name = Connor Wenck
+[core]
+    editor = vim
+	excludesfile = ~/.gitignore
+[push]
+    default = simple
+[credential]
+	helper = store
