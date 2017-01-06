@@ -19,6 +19,8 @@ function prompt_connor_precmd {
   # Format PWD.
   prompt_connor_pwd
 
+  ruby-info
+
   # Get Git repository information.
   if (( $+functions[git-info] )); then
     git-info
@@ -60,8 +62,12 @@ function prompt_connor_setup {
     'branch' ' %F{green}[%f%b%a%m%u%F{green}]%f' \
     'rprompt' ' %R%A%B'
 
+   
+  # Ruby version
+  # zstyle ':prezto:module:ruby:info:version' format ' [version:%v]'
+
   # Define prompts.
-  PROMPT='%F{red}${_prompt_connor_pwd}%f${git_info[branch]}${editor_info[keymap]} '
+  PROMPT='%F{red}${_prompt_connor_pwd}%f${git_info[branch]}${ruby_info[version]}${editor_info[keymap]} '
   RPROMPT='${git_info[rprompt]}'
   SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
 }

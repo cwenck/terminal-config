@@ -1,0 +1,4 @@
+background_color = "#181818"
+foreground_color = "#c4c5b5"
+cursor_color = "#f6f7ec"
+palette = "#141414:#f3005f:#97e023:#fa8419:#1c83ff:#9d65ff:#57d1ea:#f1f1ec:#615e4b:#f4005f:#98e024:#fa8419:#1c83ff:#9d65ff:#58d1eb:#f1f1ec"

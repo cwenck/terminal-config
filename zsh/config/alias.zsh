@@ -26,6 +26,9 @@ alias pydir='cd ~/Dropbox/Programming/Python/'
 alias cdir='cd ~/Dropbox/Programming/C/'
 alias jsndir='cd ~/Dropbox/Programming/Node/'
 
+# Python
+# alias ipython='python3 -c "from IPython import embed; embed()"'
+
 alias 330="cd ~/Connor\'s\ Stuff/College/Fall\ 2016/CMSC\ 330/code/"
 
 alias clookup='man 3'
@@ -63,10 +66,10 @@ alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
 
 #Homebrew Aliases
-alias brewFix='brew update && brew upgrade -v && brew prune && brew cleanup -s && brew cask cleanup'
-alias brewClean='brew cleanup -s && brew cask cleanup'
-alias brewDoctor='brew doctor && brew cask doctor'
-alias vboxUpdate='brew update && brew cask uninstall --force virtualbox-extension-pack && brew cask uninstall --force virtualbox && brew cask install virtualbox && brew cask install virtualbox-extension-pack'
+alias brewfix='brew update && brew upgrade -v && brew prune && brew cleanup -s && brew cask cleanup'
+alias brewclean='brew cleanup -s && brew cask cleanup'
+alias brewdoctor='brew doctor && brew cask doctor'
+alias vboxupdate='brew update && brew cask uninstall --force virtualbox-extension-pack && brew cask uninstall --force virtualbox && brew cask install virtualbox && brew cask install virtualbox-extension-pack'
 
 
 #alias starwars='telnet towel.blinkenlights.nl'

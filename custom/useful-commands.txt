@@ -1,5 +1,0 @@
-ack - faster grep that only searches necessary files
-grep - regex search
-uniq - remove duplicate lines
-sort - sort a series of lines
-cut - grab only a part of a line

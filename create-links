@@ -60,8 +60,9 @@ linkToHome "zsh/zlogin"
 linkToHome "zsh/zlogout"
 
 linkToHome "tmux.conf"
+linkToHome "gdbinit"
 
 linkToHome "gitconfig"
 linkToHome "vimrc"
 linkDirToHome "vim"
-
+linkDirToHome "ipython"

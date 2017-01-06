@@ -52,7 +52,7 @@ path=(
   ~/.usr/bin
   /Applications/Matlab.app/bin
   /Applications/Sublime\ Text.app/Contents/SharedSupport/bin
-  /usr/local/opt/go/libexec/bin:$HOME/.go/bin/
+  /usr/local/opt/go/libexec/bin:$HOME/.go/bin
   /usr/local/{bin,sbin}
   $path
   .
