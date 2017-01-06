@@ -11,13 +11,21 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-
 source ~/.sys-config/zsh/config/alias.zsh
 
-# Load Z
+if [[ "$OSTYPE" == linux* ]]; then
+    source ~/.sys-config/zsh/config/ubuntu_alias.zsh
+fi
+
+
 if [[ "$OSTYPE" == darwin* ]]; then
+    source ~/.sys-config/zsh/config/apple_alias.zsh
+
+    # Load Z
     . /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
+
+    # OCaml OPAM configuration
+    . /Users/connor/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 fi
 
 # Allow typing 'dir' to translate to 'cd dir'
@@ -25,8 +33,3 @@ setopt AUTO_CD
 
 # Disable the prompt asking to correct commands from zsh
 unsetopt correct
-
-# OPAM configuration
-. /Users/connor/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
