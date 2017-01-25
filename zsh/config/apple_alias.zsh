@@ -6,7 +6,7 @@ alias subl-snippet='cd "/Users/connor/Library/Application Support/Sublime Text 3
 
 
 #Programing Directories
-alias 330="cd ~/Connor\'s\ Stuff/College/Fall\ 2016/CMSC\ 330/code/"
+alias netdir="cd ~/Connor\'s\ Stuff/College/Spring\ 2017/CMSC\ 417/code/"
 
 
 #Finder Aliases
