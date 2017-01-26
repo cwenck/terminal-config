@@ -1,0 +1,7 @@
+{
+	"cmd": ["python3", "-u", "$file"],
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.python",
+	"encoding": "utf8",
+	"path": "$PATH:/usr/local/Cellar/python3/3.5.0/Frameworks/Python.framework/Versions/3.5/bin/"
+}

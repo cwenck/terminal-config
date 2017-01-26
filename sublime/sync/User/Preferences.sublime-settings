@@ -1,0 +1,39 @@
+{
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"caret_extra_width": 1,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/SublimeLinter/Material One Dark (SL).tmTheme",
+	"detect_indentation": false,
+	"drag_text": false,
+	"fade_fold_buttons": false,
+	"font_face": "Source Code Pro Light",
+	"font_size": 13,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintageous"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"material_theme_compact_panel": true,
+	"material_theme_compact_sidebar": true,
+	"material_theme_disable_fileicons": true,
+	"material_theme_disable_tree_indicator": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"material_theme_tabs_autowidth": true,
+	"overlay_scroll_bars": "enabled",
+	"scroll_past_end": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"tab_size": 4,
+	"theme": "Material One Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}

@@ -1,0 +1,43 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Advanced CSV",
+		"All Autocomplete",
+		"AutoFileName",
+		"BracketHighlighter",
+		"Dictionaries",
+		"DocBlockr",
+		"Emmet",
+		"FileDiffs",
+		"GitGutter",
+		"Hasher",
+		"HexViewer",
+		"iOpener",
+		"JsFormat",
+		"KeyboardSpellCheck",
+		"MarkdownEditing",
+		"Materialize",
+		"Monokai Gray",
+		"MultiEditUtils",
+		"Package Control",
+		"Prolog",
+		"Ruby Completions",
+		"Sass",
+		"Schemr",
+		"SideBarEnhancements",
+		"StringEncode",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SyncedSideBar",
+		"Text Pastry",
+		"Theme - Asphalt",
+		"Themr",
+		"TrailingSpaces",
+		"Vintage Numbers",
+		"Vintageous"
+	]
+}

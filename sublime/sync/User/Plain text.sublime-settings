@@ -1,0 +1,9 @@
+{
+    // Which file extensions go with this file type?
+    "extensions":
+    [
+        "txt"
+    ],
+    "dictionary": "Packages/Language - English/en_US.dic",
+    "spell_check": true
+}
