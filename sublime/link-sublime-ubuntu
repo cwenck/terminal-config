@@ -1,0 +1,28 @@
+#!/bin/bash
+
+function link() {
+
+    if [ ! -d "$HOME/.config/sublime-text-3" ]; then
+        "Please Install Sublime Text 3"
+        exit 1
+    fi
+
+    ln -s "$HOME/.sys-config/sublime/sync/User" "$HOME/.config/sublime-text-3/" > /dev/null 2>&1
+
+    if [ $? -eq 0 ]; then
+        echo "Linked Sublime Users Directory"
+    else
+        echo "Skipping Linknig Sublime Users Directory"
+    fi
+}
+
+########################################################
+########################################################
+########################################################
+
+if [[ $OSTYPE == darwin* ]]; then
+    echo "Only for Ubuntu"
+    exit 1
+else
+    link
+fi
