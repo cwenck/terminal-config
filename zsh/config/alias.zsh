@@ -16,6 +16,9 @@ alias cfg='cd ~/.sys-config/'
 #Tmux Aliases
 alias mux='tmuxinator'
 
+#TIG Aliases
+alias tig='tig --all'
+
 #Programing Directories
 alias code='cd ~/Dropbox/Programming/'
 alias pydir='cd ~/Dropbox/Programming/Python/'
@@ -57,3 +60,14 @@ changeDirAndList(){
     ls
 }
 alias cdl=changeDirAndList
+
+#Create a header and a src file at the same time
+ctouch(){
+    if [ -d src -a -d include ]; then
+        touch "src/$1.c"
+        touch "include/$1.h"
+    else
+        echo "src and include directories not found"
+    fi
+}
+
