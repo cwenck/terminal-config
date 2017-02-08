@@ -8,9 +8,48 @@
 		"gutter_theme_excludes":
 		[
 		],
-		"lint_mode": "background",
+		"lint_mode": "load/save",
 		"linters":
 		{
+			"annotations":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"errors":
+				[
+					"FIXME"
+				],
+				"excludes":
+				[
+				],
+				"warnings":
+				[
+					"NOTE",
+					"README",
+					"TODO",
+					"XXX",
+					"@todo"
+				]
+			},
+			"clang":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				],
+				"extra_flags": "",
+				"include_dirs":
+				[
+					"${project_folder}/includes",
+					"${project_folder}/include",
+					"${project_folder}"
+				]
+			},
 			"jshint":
 			{
 				"@disable": false,
@@ -37,7 +76,7 @@
 		},
 		"mark_style": "outline",
 		"no_column_highlights_line": false,
-		"passive_warnings": false,
+		"passive_warnings": true,
 		"paths":
 		{
 			"linux":
