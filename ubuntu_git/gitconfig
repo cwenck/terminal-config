@@ -15,5 +15,5 @@
     mouse = true
     mouse-scroll = 3
     main-view = line-number:no,interval=5 date:relative id:yes author:full commit-title:yes,graph,refs,overflow=no
-
-    
+[tig "color"]
+    cursor = white blue bold
