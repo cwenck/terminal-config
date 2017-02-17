@@ -16,7 +16,9 @@ $SCRIPTPATH/create-links
 
 # Install necessary things
 sudo apt update
+sudo apt install -y build-essential
 sudo apt install -y git
+sudo apt install -y tig
 sudo apt install -y vim
 sudo apt install -y zsh
 sudo apt install -y tmuxinator
