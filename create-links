@@ -44,6 +44,25 @@ function tryMakeDir() {
     fi
 }
 
+
+function ubuntuLinkConfigFile() {
+    if [[ $OSTYPE == linux-gnu ]]; then
+
+        app_name=$1
+        dir_path=$2
+        name=$(basename $dir_path)
+
+        if [ ! -f $HOME/.config/$app_name/$name ]; then
+            mkdir -p $HOME/.config/$app_name
+            ln -s $scriptpath/${dir_path} $HOME/.config/$app_name > /dev/null 2>&1
+            echo "Linked file ${name} for ${app_name}"
+        else
+            echo "Skipping linking file ${name} for ${app_name}"
+        fi
+    fi
+}
+
+
 ########################################################
 ########################################################
 ########################################################
@@ -73,3 +92,5 @@ fi
 linkToHome "vimrc"
 linkDirToHome "vim"
 linkDirToHome "ipython"
+
+ubuntuLinkConfigFile "terminator" "terminal/terminator/config"

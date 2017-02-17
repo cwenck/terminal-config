@@ -3,7 +3,7 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'Valloric/YouCompleteMe' , { 'do': './install.py' }
+Plug 'Valloric/YouCompleteMe' , { 'do': './install.py --all' }
 Plug 'tpope/vim-commentary'
 Plug 'Raimondi/delimitMate'
 Plug 'craigemery/vim-autotag'

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+sudo apt update
+sudo apt install -y build-essential
+sudo apt install -y cmake
+sudo apt install -y python-dev python3-dev
+sudo apt install -y ack
+sudo apt install -y axel
+sudo apt install -y git
+sudo apt install -y tig
+sudo apt install -y vim
+sudo apt install -y zsh
+sudo apt install -y tmuxinator
+sudo apt install -y terminator

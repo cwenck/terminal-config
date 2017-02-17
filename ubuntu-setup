@@ -15,14 +15,7 @@ fi
 $SCRIPTPATH/create-links
 
 # Install necessary things
-sudo apt update
-sudo apt install -y build-essential
-sudo apt install -y git
-sudo apt install -y tig
-sudo apt install -y vim
-sudo apt install -y zsh
-sudo apt install -y tmuxinator
-sudo apt install -y terminator
+$SCRIPTPATH/default-install-ubuntu
 
 # Install prezto
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${HOME}/.zprezto"
@@ -31,3 +24,5 @@ chsh -s /bin/zsh
 
 # Finally do an upgrade (Done last since it takes some time)
 sudo apt upgrade
+
+$SCRIPTPATH/chrome-install-ubuntu
