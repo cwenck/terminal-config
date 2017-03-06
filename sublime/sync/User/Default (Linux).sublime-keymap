@@ -24,5 +24,8 @@
     { "keys": ["shift+ctrl+x"], "command": "upper_case" },
     { "keys": ["ctrl+shift+d"], "command": "find_under_expand" },
     { "keys": ["super+left"], "command": "move_to", "args": {"to": "bol", "extend": false} },
-    { "keys": ["super+right"], "command": "move_to", "args": {"to": "eol", "extend": false} }
+    { "keys": ["super+right"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+    { "keys": ["super+shift+left"], "command": "move_to", "args": {"to": "bol", "extend": true} },
+    { "keys": ["super+shift+right"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+    { "keys": ["ctrl+shift+e"], "command": "expand_selection", "args": {"to": "word"} }
 ]

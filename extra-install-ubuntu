@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Allows changing / disabling using super key to launch ubuntu search
+# Hit Alt + F2, type about:config and hit enter to configure
+sudo apt-get install -y compizconfig-settings-manager
+
+# Install Albert Launcher
+sudo add-apt-repository -y ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install -y albert
