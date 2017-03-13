@@ -7,7 +7,7 @@ function link() {
         exit 1
     fi
 
-    ln -s "$HOME/.sys-config/sublime/sync/User" "$HOME/.config/sublime-text-3/" > /dev/null 2>&1
+    ln -s "$HOME/.sys-config/sublime/sync/User" "$HOME/.config/sublime-text-3/Packages" > /dev/null 2>&1
 
     if [ $? -eq 0 ]; then
         echo "Linked Sublime Users Directory"

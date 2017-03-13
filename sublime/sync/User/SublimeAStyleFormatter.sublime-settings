@@ -1,0 +1,14 @@
+{
+     "autoformat_on_save": true,
+    "options_default": {
+        "style": "java",
+        "indent-switches": true,
+        "pad-header": true,
+        "unpad-paren": true,
+        "pad-oper": true,
+        "pad-comma": true,
+        "align-pointer": "name",
+        "align-reference": "name",
+        "add-brackets": false
+    }
+}

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+sudo apt-add-repository ppa:tista/adapta -y
+sudo add-apt-repository ppa:snwh/pulp -y
+
+#sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' > /etc/apt/sources.list.d/arc-theme.list"
+#wget -nv http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_16.04/Release.key -O Release.key
+#sudo apt-key add - < Release.key
+#rm -f Release.key
+
+sudo apt update
+
+#sudo apt-get install arc-theme
+sudo apt install -y adapta-gtk-theme
+
+# install icon theme
+sudo apt-get install paper-icon-theme
+# install gtk theme
+sudo apt-get install paper-gtk-theme
+# install cursor theme
+sudo apt-get install paper-cursor-theme

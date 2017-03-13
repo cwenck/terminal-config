@@ -3,7 +3,7 @@
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/Material One Dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/OneHalfDark (SL).tmTheme",
 	"detect_indentation": false,
 	"drag_text": false,
 	"fade_fold_buttons": false,
@@ -12,7 +12,6 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"FileDiffs",
 		"Vintageous"
 	],
 	"indent_guide_options":
@@ -20,7 +19,7 @@
 		"draw_normal",
 		"draw_active"
 	],
-	"line_padding_bottom": 1,
+	"line_padding_bottom": 2,
 	"line_padding_top": 1,
 	"material_theme_compact_panel": true,
 	"material_theme_compact_sidebar": true,
