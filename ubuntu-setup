@@ -18,7 +18,7 @@ $SCRIPTPATH/create-links
 $SCRIPTPATH/default-install-ubuntu
 
 # Install prezto
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${HOME}/.zprezto"
+git clone --recursive https://github.com/zsh-users/prezto.git "${HOME}/.zprezto"
 chsh -s /bin/zsh
 
 

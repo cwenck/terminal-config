@@ -1,4 +1,8 @@
 {
+	"added_words":
+	[
+		"phishing"
+	],
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
@@ -8,7 +12,7 @@
 	"drag_text": false,
 	"fade_fold_buttons": false,
 	"font_face": "Source Code Pro",
-	"font_size": 12,
+	"font_size": 15,
 	"highlight_line": true,
 	"ignored_packages":
 	[

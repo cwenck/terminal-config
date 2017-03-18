@@ -54,8 +54,15 @@ path=(
   /Applications/Sublime\ Text.app/Contents/SharedSupport/bin
   /usr/local/opt/go/libexec/bin:$HOME/.go/bin
   /usr/local/{bin,sbin}
+  /usr/local/opt/coreutils/libexec/gnubin #Homebrew gnu utils
   $path
   .
+)
+
+# Set the path for manpages
+manpath=(
+  /usr/local/opt/coreutils/libexec/gnuman  
+  $manpath
 )
 
 #

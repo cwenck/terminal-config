@@ -13,6 +13,9 @@ alias cd..='cd ..'
 alias zshconfig='cd ~/.sys-config/zsh/'
 alias cfg='cd ~/.sys-config/'
 
+# Prezto Alias
+alias zprezto-update='cd "${ZDOTDIR:-$HOME}/.zprezto" && git pull && git submodule update --init --recursive'
+
 #Tmux Aliases
 alias mux='tmuxinator'
 

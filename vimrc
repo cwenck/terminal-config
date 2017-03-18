@@ -44,8 +44,8 @@ autocmd InsertLeave * set relativenumber
 
 syntax enable
 set background=dark
-set t_Co=256
-let base16colorspace=256
+"set t_Co=256
+"let base16colorspace=256
 
 
 " colorscheme jellybeans
@@ -54,8 +54,8 @@ colorscheme molokai " Toby Color Scheme
 " colorscheme luna-term
 " colors duotone-darksea
 
-highlight Normal ctermbg=NONE " use terminal background
-highlight nonText ctermbg=NONE " use terminal background
+" highlight Normal ctermbg=NONE " use terminal background
+" highlight nonText ctermbg=NONE " use terminal background
 
 " Other
 

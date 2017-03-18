@@ -13,3 +13,4 @@ Package Control.user-ca-bundle
 **/*.crt
 
 TextPastrySelectionHistory.sublime-settings
+i_opener_history.sublime-settings
