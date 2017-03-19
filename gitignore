@@ -1,6 +1,7 @@
-# Vim swap files #
+# Vim extra files #
 ##################
 *.sw?
+*.un~
 
 # Compiled source #
 ###################

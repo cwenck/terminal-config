@@ -80,7 +80,7 @@ linkToHome "zsh/zlogout"
 
 linkToHome "tmux.conf"
 linkToHome "gdbinit"
-
+linkToHome "fasdrc"
 
 linkToHome "gitignore"
 if [[ $OSTYPE == darwin* ]]; then

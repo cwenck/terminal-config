@@ -50,18 +50,19 @@ fpath=(
 # Set the list of directories that Zsh searches for programs.
 path=(
   ~/.usr/bin
+  /usr/local/Cellar
+  /usr/local/{bin,sbin}
+  #/usr/local/opt/coreutils/libexec/gnubin #Homebrew gnu utils
+  /usr/local/opt/go/libexec/bin:$HOME/.go/bin
   /Applications/Matlab.app/bin
   /Applications/Sublime\ Text.app/Contents/SharedSupport/bin
-  /usr/local/opt/go/libexec/bin:$HOME/.go/bin
-  /usr/local/{bin,sbin}
-  /usr/local/opt/coreutils/libexec/gnubin #Homebrew gnu utils
   $path
   .
 )
 
 # Set the path for manpages
 manpath=(
-  /usr/local/opt/coreutils/libexec/gnuman  
+  #/usr/local/opt/coreutils/libexec/gnuman  
   $manpath
 )
 

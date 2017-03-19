@@ -11,6 +11,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+#Initialize fasd
+eval "$(fasd --init auto)"
+
 source ~/.sys-config/zsh/config/alias.zsh
 
 if [[ "$OSTYPE" == linux* ]]; then
@@ -22,7 +25,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
     source ~/.sys-config/zsh/config/apple_alias.zsh
 
     # Load Z
-    . /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
+    #. /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 
     # OCaml OPAM configuration
     . /Users/connor/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

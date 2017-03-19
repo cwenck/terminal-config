@@ -16,6 +16,9 @@ alias cfg='cd ~/.sys-config/'
 # Prezto Alias
 alias zprezto-update='cd "${ZDOTDIR:-$HOME}/.zprezto" && git pull && git submodule update --init --recursive'
 
+# FASD Aliases
+alias v='f -t -e vim'
+
 #Tmux Aliases
 alias mux='tmuxinator'
 

@@ -364,7 +364,7 @@
 				<real>0.005662089679390192</real>
 			</dict>
 		</dict>
-		<key>custom-material</key>
+		<key>custom-material-v1</key>
 		<dict>
 			<key>Ansi 0 Color</key>
 			<dict>
@@ -436,13 +436,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.43182665109634399</real>
+				<real>0.75937771797180176</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.13310988247394562</real>
+				<real>0.3620573878288269</real>
 				<key>Red Component</key>
-				<real>0.98646950721740723</real>
+				<real>0.50898450613021851</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
@@ -1811,11 +1811,13 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 5</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop</string>
+	<string>~/.sys-config/terminal/iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
 	<string>{712, 521}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1855,15 +1857,15 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>1698 377 228 349 1440 -84 1920 1058 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>2651 84 643 77 1440 -84 1920 1058 </string>
+	<string>887 221 643 77 0 0 1680 1050 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>171 94 606 456 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2421 343 918 381 1440 -84 1920 1058 </string>
+	<string>501 83 937 512 0 0 1680 1050 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1530 93 1014 874 1440 -84 1920 1058 </string>
+	<string>368 21 650 552 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>-2560 252 650 452 -2560 -174 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1912,65 +1914,65 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.2240166962</real>
+				<real>0.2240166962146759</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.73029398919999999</real>
+				<real>0.73029398918151855</real>
 				<key>Red Component</key>
-				<real>0.47567743060000001</real>
+				<real>0.47567743062973022</real>
 			</dict>
 			<key>Ansi 11 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.034929972140000001</real>
+				<real>0.034929972141981125</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.64582145209999997</real>
+				<real>0.64582145214080811</real>
 				<key>Red Component</key>
-				<real>0.99284619090000004</real>
+				<real>0.99284619092941284</real>
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.7822220325</real>
+				<real>0.78222203254699707</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.37210342289999998</real>
+				<real>0.37210342288017273</real>
 				<key>Red Component</key>
-				<real>0.089720793069999999</real>
+				<real>0.089720793068408966</real>
 			</dict>
 			<key>Ansi 13 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.75937771799999998</real>
+				<real>0.75937771797180176</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.36205738780000002</real>
+				<real>0.3620573878288269</real>
 				<key>Red Component</key>
-				<real>0.50898450610000001</real>
+				<real>0.50898450613021851</real>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.79186719660000005</real>
+				<real>0.79186719655990601</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.68612653020000003</real>
+				<real>0.68612653017044067</real>
 				<key>Red Component</key>
-				<real>0.086931496859999999</real>
+				<real>0.086931496858596802</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
@@ -2068,26 +2070,26 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.14509804549999999</real>
+				<real>0.14509804546833038</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.14509804549999999</real>
+				<real>0.14509804546833038</real>
 				<key>Red Component</key>
-				<real>0.14509804549999999</real>
+				<real>0.14509804546833038</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.16344763339999999</real>
+				<real>0.16344763338565826</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.16270299260000001</real>
+				<real>0.16270299255847931</real>
 				<key>Red Component</key>
-				<real>0.93339335919999999</real>
+				<real>0.93339335918426514</real>
 			</dict>
 			<key>BM Growl</key>
 			<true/>
@@ -2502,7 +2504,7 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>SauceCodePowerline-Regular 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -2560,13 +2562,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.16608488560000001</real>
+				<real>0.166084885597229</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.14745019379999999</real>
+				<real>0.14745019376277924</real>
 				<key>Red Component</key>
-				<real>0.11278382689999999</real>
+				<real>0.11278382688760757</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
@@ -2583,15 +2585,15 @@
 			<key>Use Bright Bold</key>
 			<true/>
 			<key>Use Cursor Guide</key>
-			<true/>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<false/>
+			<true/>
 			<key>Use Tab Color</key>
 			<false/>
 			<key>Vertical Spacing</key>
-			<real>1.0583113704819276</real>
+			<real>1.0459749152861444</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
