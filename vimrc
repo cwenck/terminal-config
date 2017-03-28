@@ -59,9 +59,6 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 
-" Visual bell instead of sound on problem
-set visualbell
-
 " Highlight the cursor line
 " set cursorline
 
@@ -135,8 +132,7 @@ autocmd FileType ocaml setlocal commentstring=(*\ %s\ *)
 let mapleader = ","
 
 " Clear search highlights by pressing return in command mode
-" nnoremap <leader><space> :noh<cr>
-noremap <silent><esc> :noh<CR>
+nnoremap <leader><space> :noh<cr>
 
 " Avoid entering Ex mode
 nnoremap Q <nop>
@@ -169,6 +165,4 @@ vnoremap <S-up> :m '<-2<CR>gv=gv
 nnoremap <C-S-d> :t.<CR>==
 inoremap <C-S-d> <Esc>:t.<CR>==gi
 
-" A
-" A
 " nnoremap <CR> :noh<CR><CR>

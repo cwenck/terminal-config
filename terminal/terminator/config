@@ -1,12 +1,14 @@
 [global_config]
+  always_split_with_profile = True
   handle_size = 1
   title_font = Source Code Pro Light 13
   title_hide_sizetext = True
-  title_inactive_bg_color = "#303030"
-  title_receive_bg_color = "#303030"
-  title_receive_fg_color = "#dddddd"
-  title_transmit_bg_color = "#303030"
-  title_transmit_fg_color = "#dddddd"
+  title_inactive_bg_color = "#37474f"
+  title_inactive_fg_color = "#607d8b"
+  title_receive_bg_color = "#37474f"
+  title_receive_fg_color = "#90a4ae"
+  title_transmit_bg_color = "#37474f"
+  title_transmit_fg_color = "#90a4ae"
   title_use_system_font = False
 [keybindings]
   cycle_next = None
@@ -28,11 +30,11 @@
 [plugins]
 [profiles]
   [[default]]
+    background_color = "#1d262a"
     background_darkness = 0.92
     background_image = None
+    cursor_color = "#eceff1"
+    foreground_color = "#c4cfd4"
+    palette = "#252525:#ee292a:#79ba39:#fda509:#175fc7:#825cc2:#16afca:#f5f5f5:#252525:#ee292a:#79ba39:#fda509:#175fc7:#825cc2:#16afca:#f5f5f5"
     scrollback_infinite = True
     scrollbar_position = hidden
-	background_color = "#1d262a"
-	foreground_color = "#c4cfd4"
-	cursor_color = "#ff443e"
-	palette = "#252525:#ee292a:#79ba39:#fda509:#175fc7:#825cc2:#16afca:#f5f5f5:#252525:#ee292a:#79ba39:#fda509:#175fc7:#825cc2:#16afca:#f5f5f5"
