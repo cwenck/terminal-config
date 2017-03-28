@@ -28,11 +28,11 @@
 [plugins]
 [profiles]
   [[default]]
+    background_color = "#181818"
     background_darkness = 0.92
     background_image = None
+    cursor_color = "#f6f7ec"
+    foreground_color = "#c4c5b5"
+    palette = "#141414:#f3005f:#97e023:#fa8419:#1c83ff:#9d65ff:#57d1ea:#f1f1ec:#615e4b:#f4005f:#98e024:#fa8419:#1c83ff:#9d65ff:#58d1eb:#f1f1ec"
     scrollback_infinite = True
     scrollbar_position = hidden
-	background_color = "#1d262a"
-	foreground_color = "#c4cfd4"
-	cursor_color = "#ff443e"
-	palette = "#252525:#ee292a:#79ba39:#fda509:#175fc7:#825cc2:#16afca:#f5f5f5:#252525:#ee292a:#79ba39:#fda509:#175fc7:#825cc2:#16afca:#f5f5f5"
