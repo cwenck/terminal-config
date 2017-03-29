@@ -6,6 +6,20 @@ if [[ $scriptpath == "." ]]; then
     scriptpath=$(pwd)
 fi
 
+function createLink() {
+    dir_path=$1
+	to_path=$2
+    name=$(basename $dir_path)
+
+    if [ ! -d ~/.$name ]; then
+        ln -s $scriptpath/${dir_path} ${to_path} > /dev/null 2>&1
+        echo "Linked ${name} directory"
+    else
+        echo "Skipping linking ${name} directory"
+    fi
+
+}
+
 # Dotfiles should not start with dots
 function linkToHome() {
     path=$1
@@ -70,7 +84,10 @@ function ubuntuLinkConfigFile() {
 tryMakeDir "$HOME/.usr"
 tryMakeDir "$HOME/.usr/bin"
 tryMakeDir "$HOME/.usr/lib"
+tryMakeDir "$HOME/.usr/share"
 tryMakeDir "$HOME/.vimundo"
+
+createLink "shared_bin" "$HOME/.usr/share/bin"
 
 linkToHome "zsh/zshrc"
 linkToHome "zsh/zpreztorc"
