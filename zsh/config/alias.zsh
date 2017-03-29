@@ -77,3 +77,12 @@ ctouch(){
     fi
 }
 
+#Rename a header and a src file at the same time
+cmv(){
+    if [ -d src -a -d include ]; then
+        mv "src/$1.c" "src/$2.c"
+        mv "include/$1.h" "include/$2.h"
+    else
+        echo "src and include directories not found"
+    fi
+}

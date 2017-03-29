@@ -70,6 +70,7 @@ function ubuntuLinkConfigFile() {
 tryMakeDir "$HOME/.usr"
 tryMakeDir "$HOME/.usr/bin"
 tryMakeDir "$HOME/.usr/lib"
+tryMakeDir "$HOME/.vimundo"
 
 linkToHome "zsh/zshrc"
 linkToHome "zsh/zpreztorc"

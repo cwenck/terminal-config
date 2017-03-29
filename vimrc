@@ -75,6 +75,7 @@ set laststatus=2
 
 " Save undos to a file, will persist when vim quits
 set undofile
+set undodir=$HOME/.vimundo/
 
 " Search Options
 set showmatch
@@ -119,7 +120,7 @@ let g:vim_json_syntax_conceal = 0
 
 " Airline settings
 " let g:airline_theme='minimalist'
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:airline#extensions#tabline#enabled = 1
 
 " Vim Commentary Added Support
@@ -133,6 +134,9 @@ let mapleader = ","
 
 " Clear search highlights by pressing return in command mode
 nnoremap <leader><space> :noh<cr>
+
+" Use jj to enter insert mode
+inoremap jj <Esc>
 
 " Avoid entering Ex mode
 nnoremap Q <nop>
