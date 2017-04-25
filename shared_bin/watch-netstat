@@ -1,4 +1,4 @@
 #!/bin/bash
 
-watch -n.1 "sudo netstat -plant | grep -vi dropbox | grep -vi chrome | grep -vi rhythmbox | grep -vi discord | grep -v megasync"
+watch -n.1 "sudo netstat -plant | grep -vi spotify | grep -vi dropbox | grep -vi chrome | grep -vi rhythmbox | grep -vi discord | grep -v megasync"
 
