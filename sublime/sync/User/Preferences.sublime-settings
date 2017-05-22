@@ -1,7 +1,10 @@
 {
 	"added_words":
 	[
-		"phishing"
+		"phishing",
+		"Bitcoin",
+		"bitcoins",
+		"cryptocurrency"
 	],
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
@@ -12,11 +15,11 @@
 	"drag_text": false,
 	"fade_fold_buttons": false,
 	"font_face": "Source Code Pro",
-	"font_size": 12,
+	"font_size": 9,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintageous"
+		"Six"
 	],
 	"indent_guide_options":
 	[

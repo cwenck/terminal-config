@@ -1,5 +1,5 @@
 {
-     "autoformat_on_save": true,
+    "autoformat_on_save": false,
     "options_default": {
         "style": "java",
         "indent-switches": true,

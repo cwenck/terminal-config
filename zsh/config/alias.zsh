@@ -86,3 +86,13 @@ cmv(){
         echo "src and include directories not found"
     fi
 }
+
+#Store a header and a src file at the same time
+cstore(){
+    if [ -d src -a -d include ]; then
+        mv "$1.c" "src"
+        mv "$1.h" "include"
+    else
+        echo "src and include directories not found"
+    fi
+}

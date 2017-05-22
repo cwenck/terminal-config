@@ -8,7 +8,6 @@
 		"All Autocomplete",
 		"AutoFileName",
 		"Babel",
-		"BracketHighlighter",
 		"DocBlockr",
 		"Emmet",
 		"FileDiffs",
@@ -22,6 +21,7 @@
 		"Materialize",
 		"MultiEditUtils",
 		"One Half Color Schemes",
+		"Origami",
 		"Package Control",
 		"Prolog",
 		"Protobuf Syntax Hightlighting",
@@ -30,6 +30,7 @@
 		"Sass",
 		"Schemr",
 		"SideBarEnhancements",
+		"Six",
 		"SortBy",
 		"StringEncode",
 		"SublimeAStyleFormatter",
@@ -38,13 +39,12 @@
 		"SublimeLinter-annotations",
 		"SublimeLinter-contrib-clang",
 		"SublimeLinter-jshint",
-		"SwapStrings",
+		"Surround",
 		"SyncedSideBar",
 		"Text Pastry",
 		"Theme - Asphalt",
 		"Themr",
 		"TrailingSpaces",
-		"Vintage Numbers",
-		"Vintageous"
+		"Vintage Numbers"
 	]
 }

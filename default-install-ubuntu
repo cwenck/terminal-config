@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo add-apt-repository -y ppa:aacebedo/fasd
 sudo apt update
 sudo apt install -y build-essential
@@ -12,3 +14,6 @@ sudo apt install -y zsh
 sudo apt install -y fasd
 sudo apt install -y tmuxinator
 sudo apt install -y terminator
+
+# Install extra man pages
+sudo apt-get install manpages-posix manpages-posix-dev
