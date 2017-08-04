@@ -6,26 +6,29 @@
 #
 #
 
+source $HOME/.zprofile
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-#Initialize fasd
-eval "$(fasd --init auto)"
+#Initialize fasd if it's installed
+command -v fasd >/dev/null 2>&1
+if [ $? -eq 0 ] ; then
+	eval "$(fasd --init auto)"
+fi
 
 source ~/.sys-config/zsh/config/alias.zsh
 
 if [[ "$OSTYPE" == linux* ]]; then
     source ~/.sys-config/zsh/config/ubuntu_alias.zsh
+	alias pac="pacaur"
 fi
 
 
 if [[ "$OSTYPE" == darwin* ]]; then
     source ~/.sys-config/zsh/config/apple_alias.zsh
-
-    # Load Z
-    #. /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 
     # OCaml OPAM configuration
     . /Users/connor/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
@@ -36,3 +39,4 @@ setopt AUTO_CD
 
 # Disable the prompt asking to correct commands from zsh
 unsetopt correct
+

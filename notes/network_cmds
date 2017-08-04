@@ -9,3 +9,8 @@ Cain and Abel
 ntop
 squil
 tcpxtract
+
+dig    # DNS lookups
+host   # Quickly resolve DNS
+netcat
+netstat

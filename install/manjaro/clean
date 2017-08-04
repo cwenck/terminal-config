@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# List orphaned dependencies
+pacaur -Qdt
+
+# Remove those orphaned dependencies
+# pacaur -Rsn $(pacaur -Qdtq)

@@ -1,0 +1,8 @@
+REMOVE:
+	pacaur -Rsn <PKG>
+
+SEARCH:
+	pacaur -Ss <PKG>
+
+INSTALL:
+	pacaur -S <PKG>

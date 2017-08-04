@@ -1,10 +1,14 @@
 #!/bin/bash
 
 scriptpath="$(dirname ${BASH_SOURCE[0]})"
-
+	
 if [[ $scriptpath == "." ]]; then
     scriptpath=$(pwd)
 fi
+
+
+
+SYS="$("$scriptpath/shared_bin/sysname")"
 
 function createLink() {
     dir_path=$1
@@ -17,8 +21,8 @@ function createLink() {
     else
         echo "Skipping linking ${name} directory"
     fi
-
 }
+
 
 # Dotfiles should not start with dots
 function linkToHome() {
@@ -46,20 +50,7 @@ function linkDirToHome() {
     fi
 }
 
-function tryMakeDir() {
-    dir_path=$1
-    name=$(basename $dir_path)
-
-    mkdir $dir_path > /dev/null 2>&1
-    if [ $? -eq 0 ]; then
-        echo "Created $dir_path"
-    else
-        echo "Skipping creation of $dir_path directory"
-    fi
-}
-
-
-function ubuntuLinkConfigFile() {
+function linkLinuxConfig() {
     if [[ $OSTYPE == linux-gnu ]]; then
 
         app_name=$1
@@ -81,11 +72,11 @@ function ubuntuLinkConfigFile() {
 ########################################################
 ########################################################
 
-tryMakeDir "$HOME/.usr"
-tryMakeDir "$HOME/.usr/bin"
-tryMakeDir "$HOME/.usr/lib"
-tryMakeDir "$HOME/.usr/share"
-tryMakeDir "$HOME/.vimundo"
+mkdir -p  "$HOME/.usr"
+mkdir -p "$HOME/.usr/bin"
+mkdir -p "$HOME/.usr/lib"
+mkdir -p "$HOME/.usr/share"
+mkdir -p "$HOME/.vimundo"
 
 createLink "shared_bin" "$HOME/.usr/share/bin"
 
@@ -101,14 +92,17 @@ linkToHome "gdbinit"
 linkToHome "fasdrc"
 
 linkToHome "gitignore"
-if [[ $OSTYPE == darwin* ]]; then
+if [[ $SYS == "Darwin" ]]; then
     linkToHome "apple_git/gitconfig"
 else
-    linkToHome "ubuntu_git/gitconfig"
+    linkToHome "linux_git/gitconfig"
 fi
 
 linkToHome "vimrc"
 linkDirToHome "vim"
 linkDirToHome "ipython"
 
-ubuntuLinkConfigFile "terminator" "terminal/terminator/config"
+linkLinuxConfig "terminator" "terminal/terminator/config"
+if [[ $SYS == "Manjaro" ]]; then
+	linkLinuxConfig "pacaur" "utils/pacaur/config"
+fi

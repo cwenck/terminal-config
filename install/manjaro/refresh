@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Rank the mirrors again
+sudo pacman-mirrors -g
+
+# Update the system
+pacaur -Syyu

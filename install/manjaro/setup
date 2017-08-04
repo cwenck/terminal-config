@@ -1,0 +1,35 @@
+#!/bin/bash
+
+pushd `dirname $0` > /dev/null
+INSTALLPATH=`pwd -P`
+popd > /dev/null
+
+SCRIPTPATH="$(echo $INSTALLPATH | rev | cut -d"/" -f3- | rev)"
+
+echo $INSTALLPATH
+echo $SCRIPTPATH
+
+BASE_DIR=$(basename $SCRIPTPATH)
+
+if [ "$SCRIPTPATH" != "${HOME}/.sys-config" ]; then
+    echo "Move this folder to ~/.sys-config"
+    exit 1
+fi
+
+# Install Packer
+$INSTALLPATH/install_packer.sh
+
+# Make Sure ZSH is up to date
+packer -Syu
+
+# Install Prezto
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+# Link Dotfiles
+$SCRIPTPATH/create-links
+
+# Change Default Shell to ZSH
+chsh -s /bin/zsh
+
+# Install Default Apps
+$INSTALLPATH/install_apps.sh

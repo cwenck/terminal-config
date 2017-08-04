@@ -1,0 +1,15 @@
+#!/bin/bash
+
+OSTYPE="$(uname -s)"
+
+if [[ $OSTYPE == Darwin* ]]; then
+	echo "Darwin"
+	exit 0
+elif [[ $OSTYPE == Linux* ]]; then
+	DISTRO="$(lsb_release -sd | sed -e "s/\"//g" | grep -E -o --color=never "^\w+")"
+	echo $DISTRO
+	exit 0
+else
+	echo "Unknown OS"
+	exit 1
+fi

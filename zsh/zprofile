@@ -9,6 +9,7 @@
 # Browser
 #
 
+
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
 fi
@@ -63,7 +64,6 @@ path=(
 
 # Set the path for manpages
 manpath=(
-  #/usr/local/opt/coreutils/libexec/gnuman  
   $manpath
 )
 
