@@ -18,6 +18,7 @@
   cycle_prev = None
   group_all = None
   group_all_toggle = <Super>s
+  help = None
   layout_launcher = None
   next_tab = <Primary>Tab
   prev_tab = <Primary><Shift>Tab

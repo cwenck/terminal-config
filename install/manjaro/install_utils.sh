@@ -10,3 +10,4 @@ install tig
 install vim
 install fasd
 install tmux
+install tree
