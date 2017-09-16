@@ -11,3 +11,4 @@ install vim
 install fasd
 install tmux
 install tree
+install bind-tools
