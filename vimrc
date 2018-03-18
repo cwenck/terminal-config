@@ -29,7 +29,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 
-Plug 'cskeeters/vim-smooth-scroll'
+" Plug 'cskeeters/vim-smooth-scroll'
 
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
@@ -47,9 +47,7 @@ Plug 'kshenoy/vim-signature'
 " Plug 'PeterRincker/vim-argumentative'
 
 " Color Scheme Plugs
-" Plug 'KeitaNakamura/neodark.vim'
 Plug 'joshdick/onedark.vim'
-" Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
 
@@ -234,7 +232,7 @@ nnoremap Q <nop>
 nnoremap k gk
 nnoremap j gj
 
-" Press either Shift + Up or Shift + Down to move lines up or down
+" Press either Alt + Up or Alt + Down to move lines up or down
 execute "set <M-j>=j"
 execute "set <M-k>=k"
 map <M-k> [e

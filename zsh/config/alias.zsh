@@ -1,6 +1,3 @@
-#Tmp SSH Alias
-alias tmp='ssh -p 46916 root@aceslab.umd.edu'
-
 #Common Directory Aliases
 alias dsk='cd ~/Desktop/'
 alias dropbox='cd ~/Dropbox/'
@@ -47,14 +44,11 @@ alias vrestart='vagrant halt && vagrant up && vagrant ssh'
 alias grace='ssh cwenck@grace1.umd.edu'
 alias xgrace='ssh -X cwenck@grace1.umd.edu'
 
-#ACES
-alias aces='ssh cwenck@acesclass.umd.edu -p5044'
-
 #Added Commands
 alias reload='. ~/.zshrc'
 alias refresh='. ~/.zshrc'
 
-#Program Shortcuts
+#Hash Sum Shortcuts
 alias sha1='shasum -a 1'
 alias sha256='shasum -a 256'
 alias sha512='shasum -a 512'
