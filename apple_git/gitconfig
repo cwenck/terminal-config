@@ -4,6 +4,7 @@
 [core]
     editor = vim
 	excludesfile = ~/.gitignore
+	filemode = false
 [push]
     default = simple
 [alias]
@@ -14,10 +15,6 @@
     mouse-scroll = 3
     main-view = line-number:no,interval=5 date:relative id:yes author:full commit-title:yes,graph,refs,overflow=no
 [tig "color"]
-    cursor = white blue bold
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+	cursor = white blue bold
+[merge]
+	conflictstyle = diff3

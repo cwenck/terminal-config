@@ -3,14 +3,15 @@ filetype off
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'tpope/vim-sensible'
 "Plug 'Valloric/YouCompleteMe' ", { 'do': './install.py --all' }
 "Plug 'Shougo/neocomplete.vim'
 Plug 'ajh17/VimCompletesMe'
 Plug 'tpope/vim-commentary'
 Plug 'Raimondi/delimitMate'
-Plug 'craigemery/vim-autotag'
+" Plug 'craigemery/vim-autotag'
 Plug 'Yggdroot/indentLine'
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'elzr/vim-json'
 Plug 'terryma/vim-multiple-cursors' " Figure out how to use this
 Plug 'Chiel92/vim-autoformat' " Figure out how to use this
@@ -23,7 +24,9 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-speeddating'
 
 " Color Scheme Plugs
-Plug 'dikiaap/minimalist'
+Plug 'sheerun/vim-polyglot' " Better syntax highlighting
+" Plug 'dikiaap/minimalist'
+Plug 'joshdick/onedark.vim', { 'do': 'mkdir -p ~/.vim/autoload/lightline/colorscheme/ && cp -f ./autoload/lightline/colorscheme/onedark.vim ~/.vim/autoload/lightline/colorscheme/' }
 
 
 call plug#end()
@@ -98,52 +101,67 @@ set autoindent
 " Copy Paste to System Clipboard
 set clipboard=unnamed
 
+" Remember position in file when reopening
+function! ResCur()
+  if line("'\"") <= line("$")
+    normal! g`"
+    return 1
+  endif
+endfunction
+
+augroup resCur
+  autocmd!
+  autocmd BufWinEnter * call ResCur()
+augroup END
+
 " Color Scheme
+syntax on
 
-" set t_Co=256
-set t_Co=16
+if (has("termguicolors"))
+	set termguicolors
+else 
+	set t_Co=16
+endif
+
 set background=dark
-
-syntax enable
-
-" set termguicolors
-" colorscheme custom-material
-colorscheme molokai " Toby Color Scheme
-" colorscheme solarized
-" colorscheme minimalist
-
-" highlight Normal ctermbg=NONE " use terminal background
-" highlight nonText ctermbg=NONE " use terminal background
+colorscheme onedark
 
 " JSON show all quotes
 let g:vim_json_syntax_conceal = 0
 
-" Airline settings
-" let g:airline_theme='minimalist'
-let g:airline_powerline_fonts = 0
-let g:airline#extensions#tabline#enabled = 1
+" Lightline Settings
+let g:lightline = { 'colorscheme': 'onedark' }
+
 
 " Vim Commentary Added Support
 autocmd FileType ocaml setlocal commentstring=(*\ %s\ *)
 
+
 "Keyboard Mappings "
+
 "-------------------"
 
-" Map leader key
-let mapleader = ","
+" Make <Space> the leader key
+let mapleader="\\"
+map <Space> <leader>
 
 " Clear search highlights by pressing return in command mode
-nnoremap <leader><space> :noh<cr>
+nnoremap <leader>;  :noh<CR>
+
+" Use F2 to toggle vim paste mode
+set pastetoggle=<F2>
 
 " Use jj to enter insert mode
-inoremap jj <Esc>
+inoremap <nowait> <silent> jj <Esc>`^
+inoremap <nowait> <silent> jk <Esc>`^
+inoremap <nowait> <silent> kj <Esc>`^
 
 " Avoid entering Ex mode
 nnoremap Q <nop>
 
 " Map Ctrl-C to Esc
-inoremap <C-c> <Esc> 
-vnoremap <C-c> <Esc>
+inoremap <C-c> <Esc> `^
+vnoremap <C-c> <Esc>`^
 
 " Move by screen lines in vim
 nnoremap j gj
@@ -164,9 +182,3 @@ inoremap <S-down> <Esc>:m .+1<CR>==gi
 inoremap <S-up> <Esc>:m .-2<CR>==gi
 vnoremap <S-down> :m '>+1<CR>gv=gv
 vnoremap <S-up> :m '<-2<CR>gv=gv
-
-" Press Shift + Ctrl + d to duplicate a line
-nnoremap <C-S-d> :t.<CR>==
-inoremap <C-S-d> <Esc>:t.<CR>==gi
-
-" nnoremap <CR> :noh<CR><CR>
